@@ -1,0 +1,48 @@
+fieldset {
+    display: block;
+    -webkit-margin-start: 2px;
+    -webkit-margin-end: 2px;
+    -webkit-padding-before: 0.35em;
+    -webkit-padding-start: 0.75em;
+    -webkit-padding-end: 0.75em;
+    -webkit-padding-after: 0.625em;
+    min-width: -webkit-min-content;
+    border-width: 2px;
+    border-style: groove;
+    margin-bottom: 5px;
+}
+
+.logo-2{
+    height: 40px;
+    width: 40px;
+    vertical-align: top;
+  margin-right: 5px;
+  position: relative;
+}
+
+.addpro {
+     text-align: center;
+     position: relative;
+}
+
+.detalle {
+  text-align: center;
+  font-size: 24px;
+}
+.centro{
+  text-align: center;
+}
+
+.margen{
+  margin-bottom:5px;
+}
+
+.alinear-vertical{
+  vertical-align: middle;
+  position: relative;
+  font-size: 21px;
+}
+
+.icono{
+    font-size:24px;
+}

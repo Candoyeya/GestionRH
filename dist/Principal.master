@@ -1,0 +1,203 @@
+﻿<%@ Master Language="VB" CodeFile="Principal.master.vb" Inherits="dist_Principal" %>
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title> Gestion de Recursos Humanos </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="css/vendor.css">
+        <link rel="stylesheet" href="css/estilo.css">
+        <!-- Theme initialization -->
+        <script>
+            var themeSettings = (localStorage.getItem('themeSettings')) ? JSON.parse(localStorage.getItem('themeSettings')) :
+            {};
+            var themeName = themeSettings.themeName || '';
+            if (themeName)
+            {
+                document.write('<link rel="stylesheet" id="theme-style" href="css/app-' + themeName + '.css">');
+            }
+            else
+            {
+                document.write('<link rel="stylesheet" id="theme-style" href="css/app.css">');
+            }
+        </script>
+    </head>
+
+    <body>
+        <div class="main-wrapper"/>
+            <div class="app" id="app"/>
+                <header class="header">
+                    <div class="header-block header-block-collapse hidden-lg-up"> 
+                        <button class="collapse-btn" id="sidebar-collapse-btn">
+    			            <i class="fa fa-bars"></i>
+    		            </button> 
+                    </div>
+
+                    <div class="header-block header-block-nav">
+                        <ul class="nav-profile">
+                            <li class="notifications new">
+                                <a href="" data-toggle="dropdown"> <i class="fa fa-bell-o"></i>  </a>
+                                <div class="dropdown-menu notifications-dropdown-menu">
+                                    <footer>
+                                        <ul>
+                                            <li> <a href="">
+    			                                    No hay Notificaciones
+    			                                  </a> </li>
+                                        </ul>
+                                    </footer>
+                                </div>
+                            </li>
+                            <li class="profile dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <div class="img" style="background-image: url('img/oscar.jpg')"> </div> <span class="name">Oscar Valladares</span> </a>
+                                <div class="dropdown-menu profile-dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <a class="dropdown-item" href="#"> <i class="fa fa-user icon"></i> Perfil </a>
+                                    <a class="dropdown-item" href="#"> <i class="fa fa-bell icon"></i> Notificaciones </a>
+                                    <a class="dropdown-item" href="#"> <i class="fa fa-gear icon"></i> Configuracion </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="login.html"> <i class="fa fa-power-off icon"></i> Logout </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </header>
+<!----------------------------------------------------Menu------------------------------------------------------------------------>
+                <aside class="sidebar">
+                    <div class="sidebar-container">
+                        <div class="sidebar-header">
+                            <div class="brand">
+                                <div class="logo"> <img src="img/logo.png" class="logo-2"></div> Gestion RH </div>
+                        </div>
+                        <nav class="menu">
+                            <ul class="nav metismenu" id="sidebar-menu">
+                                <li>
+                                    <a href="index.aspx"> <i class="fa fa-users"></i> Empleados </a>
+                                </li>
+                                <li>
+                                    <a href="bolsa.aspx"> <i class="fa fa-hdd-o"></i> Bolsa de Trabajo </i> </a>
+                                </li>
+                                <li>
+                                    <a href="plantilla.aspx"> <i class="fa fa-archive"></i> Plantilla </a>
+                                </li>
+                                <li>
+                                    <a href="asistencia.aspx"> <i class="fa fa-table"></i> Asistencias </a>
+                                </li>
+                                <li>
+                                    <a href="incidencias.aspx"> <i class="fa fa-pencil-square-o"></i> Incidencias </a>
+                                </li>
+                                <li>
+                                    <a href="#"> <i class="fa fa-globe"></i> Vacaciones </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <footer class="sidebar-footer">
+                        <ul class="nav metismenu" id="customize-menu">
+                            <li>
+                                <ul>
+                                    <li class="customize">
+                                        <div class="customize-item">
+                                            <div class="row customize-header">
+                                                <div class="col-xs-4"> </div>
+                                                <div class="col-xs-4"> <label class="title">fixed</label> </div>
+                                                <div class="col-xs-4"> <label class="title">static</label> </div>
+                                            </div>
+                                            <div class="row hidden-md-down">
+                                                <div class="col-xs-4"> <label class="title">Sidebar:</label> </div>
+                                                <div class="col-xs-4"> <label>
+    				                        <input class="radio" type="radio" name="sidebarPosition" value="sidebar-fixed" >
+    				                        <span></span>
+    				                    </label> </div>
+                                                <div class="col-xs-4"> <label>
+    				                        <input class="radio" type="radio" name="sidebarPosition" value="">
+    				                        <span></span>
+    				                    </label> </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-4"> <label class="title">Header:</label> </div>
+                                                <div class="col-xs-4"> <label>
+    				                        <input class="radio" type="radio" name="headerPosition" value="header-fixed">
+    				                        <span></span>
+    				                    </label> </div>
+                                                <div class="col-xs-4"> <label>
+    				                        <input class="radio" type="radio" name="headerPosition" value="">
+    				                        <span></span>
+    				                    </label> </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-4"> <label class="title">Footer:</label> </div>
+                                                <div class="col-xs-4"> <label>
+    				                        <input class="radio" type="radio" name="footerPosition" value="footer-fixed">
+    				                        <span></span>
+    				                    </label> </div>
+                                                <div class="col-xs-4"> <label>
+    				                        <input class="radio" type="radio" name="footerPosition" value="">
+    				                        <span></span>
+    				                    </label> </div>
+                                            </div>
+                                        </div>
+                                        <div class="customize-item">
+                                            <ul class="customize-colors">
+                                                <li> <span class="color-item color-red" data-theme="red"></span> </li>
+                                                <li> <span class="color-item color-orange" data-theme="orange"></span> </li>
+                                                <li> <span class="color-item color-green active" data-theme=""></span> </li>
+                                                <li> <span class="color-item color-seagreen" data-theme="seagreen"></span> </li>
+                                                <li> <span class="color-item color-blue" data-theme="blue"></span> </li>
+                                                <li> <span class="color-item color-purple" data-theme="purple"></span> </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <a href=""> <i class="fa fa-cog"></i> Customize </a>
+                            </li>
+                        </ul>
+                    </footer>
+                </aside>
+                <div class="sidebar-overlay" id="sidebar-overlay"></div>
+<!----------------------------------------------------Contenido-------------------------------------------------------------------->
+                
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                               
+                    </asp:ContentPlaceHolder>
+              
+<!--------------------------------------------------footer------------------------------------------------------------------------>
+                <footer class="footer">
+                    <div class="footer-block buttons"> Hola Mundo </div>
+                    <div class="footer-block author">
+                        <ul>
+                            <li> Creado Por <a href="#">Alejandro Estrada & Oscar Valladares </a> </li>
+                            <li> <a href="#">Tocame</a> </li>
+                        </ul>
+                    </div>
+                </footer>
+
+                
+        <script>
+            (function(i, s, o, g, r, a, m)
+            {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function()
+                {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+            ga('create', 'UA-80463319-2', 'auto');
+            ga('send', 'pageview');
+        </script>
+        <script src="js/vendor.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+
+</html>
