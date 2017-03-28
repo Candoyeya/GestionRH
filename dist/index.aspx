@@ -48,7 +48,7 @@
                                             <asp:BoundField HeaderText="Turno" DataField="Turno" ItemStyle-CssClass="active"/>
                                             <asp:TemplateField HeaderText="Detalles" ItemStyle-VerticalAlign="Top" ItemStyle-HorizontalAlign="Center">
                                                 <ItemTemplate>
-                                                    <a href="#"><i class="fa fa-eye fa-2x"></i></a>
+                                                    <a href="InfoEmpleados.aspx"><i class="fa fa-eye fa-2x"></i></a>
                                                 </ItemTemplate>
                                             </asp:TemplateField>
                                         </Columns>
