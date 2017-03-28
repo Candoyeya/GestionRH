@@ -8,6 +8,7 @@ End Class
 Public Module ConectaMod
     '-------------------------------------------------------------------------------------------------------------------------------------
     '--Creacion 2017/03/21
+    '--Actualizacion 2017/03/28 servidor nuevo
     '---Conexion sql
     Public ConnectionString As String = "Data Source=SERVER\COMPAC; Initial Catalog=ct2017_SURTIDOR2_; User Id=sa; Password=SURTIDORA.2017"
     Public cnn As SqlConnection = New SqlConnection(ConnectionString)
