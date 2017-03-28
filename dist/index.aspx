@@ -2,71 +2,67 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 <article class="content dashboard-page">
-                   
+   <form runat="server">    
+    <asp:ScriptManager id="ScriptManager1" runat="server"></asp:ScriptManager>   
+     <asp:UpdatePanel id="UpdatePanel1" UpdateMode="Conditional" runat="server">
+     <ContentTemplate>       
     <section class="section">
-        <form>
         <div class="col-md-6">
             <fieldset>
             <legend>Nombre</legend>
-                <input id="nombre" type='text' tabindex='1' placeholder="Nombre" class="form-control underlined" runat="server">
+                <asp:Panel ID="Panel1" runat="server" DefaultButton="BtnBEmpleado">
+                    <asp:TextBox ID="nombre" runat="server" class="form-control underlined"></asp:TextBox>
+                    <asp:ImageButton 
+                        ID="BtnBEmpleado" 
+                        runat="server" 
+                        CommandName="Select" 
+                        ToolTip="Seleccionar" 
+                        style="display:none;">
+                    </asp:ImageButton>                    
+                </asp:Panel>
             </fieldset>
         </div>
         <div class="col-md-6">
             <fieldset>
             <legend>Departamento</legend>
-                <select class="form-control">
-                        <option>--Selecciona un Departamento--</option>
-                        <option>Almace1</option>
-                        <option>Almacen2</option>
-                        <option>Embarques</option>
-                        <option>Compras</option>
-                        <option>Sistemas</option>
-                </select>
+                <asp:DropDownList ID="Departamento" runat="server" CssClass="form-control" AutoPostBack="true" CausesValidation="false" ></asp:DropDownList>
             </fieldset>
         </div>
-    </form>
     </section>
-
     <section class="section">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card">
-                    <div class="card-block">
-                        <div class="card-title-block">
-                            <h3 class="title"> Empleados </h3>
-                        </div>
-                        <section class="example">
-                            <div class="table-flip-scroll">
-                                <table class="table table-striped table-bordered table-hover flip-content">
-                                    <thead class="flip-header">
-                                        <tr>
-                                            <th>Nombre</th>
-                                            <th>Departamento</th>
-                                            <th>Puesto</th>
-                                            <th>Turno</th>
-                                            <th>Jefe Directo</th>
-                                            <th>Detalle</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="gradeA">
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td class="detalle"><a href="InfoEmpleados.aspx"><i class="fa fa-eye"></i></a></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-block">
+                            <div class="card-title-block">
+                                <h3 class="title"> Empleados </h3>
                             </div>
-                        </section>
+                            <section class="example">
+                                <div class="table-flip-scroll">                                    
+                                    <asp:GridView id="GvEmpleados" runat="server" GridLines="None" CssClass="table table-striped table-bordered table-hover flip-content" 
+                                                    ShowHeaderWhenEmpty="true" AutoGenerateColumns="False" AutoPostBack="true" CausesValidation="false">
+                                        <Columns>
+                                            <asp:BoundField HeaderText="Nombre" DataField="Nombre" ItemStyle-CssClass="active"/>
+                                            <asp:BoundField HeaderText="Departamento" DataField="Departamento" ItemStyle-CssClass="active"/>
+                                            <asp:BoundField HeaderText="Puesto" DataField="Puesto" ItemStyle-CssClass="active"/>
+                                            <asp:BoundField HeaderText="Turno" DataField="Turno" ItemStyle-CssClass="active"/>
+                                            <asp:TemplateField HeaderText="Detalles" ItemStyle-VerticalAlign="Top" ItemStyle-HorizontalAlign="Center">
+                                                <ItemTemplate>
+                                                    <a href="#"><i class="fa fa-eye fa-2x"></i></a>
+                                                </ItemTemplate>
+                                            </asp:TemplateField>
+                                        </Columns>
+                                    </asp:GridView>                                       
+                                </div>
+                            </section>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section> 
-                       
+    </ContentTemplate>
+    </asp:UpdatePanel>  
+   </form>                    
 </article>
 </asp:Content>
 
