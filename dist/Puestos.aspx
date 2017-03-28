@@ -13,7 +13,7 @@
                                          
                                         
                                              <fieldset>
-                                            <legend>Puestos</legend> 
+                                            <legend>Puestos Feliz Cumpleaños</legend> 
                                                     <section class="example">
                                                         <div class="table-flip-scroll">
                                                             <table class="table table-striped table-bordered table-hover flip-content">
