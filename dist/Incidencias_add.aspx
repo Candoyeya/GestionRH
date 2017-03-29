@@ -9,15 +9,29 @@
                             <div class="col-md-12">
                                 <div class="card">
                                     <div class="card-block">
+                                       <div class="col-md-1">
+                                          <img src="#">
+                                       </div>
+                                       <div class="col-md-6">
+                                          <h3>Oscar Valladares</h3>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="card-block">
                                          <div class="col-md-12">
                                                 <div class="col-md-12"> 
                                                     <div class="col-md-3">
                                                          <label class="alinear-vertical margen">Incidencia:</label>
                                                          <select class="form-control">
-                                                            <option>Prestamo</option>
-                                                            <option>Bono</option>
+                                                            <option>Gratificaciones</option>
+                                                            <option>Deduciones</option>
                                                             <option>Tardeada</option>
-                                                            <option>Descuento</option>
+                                                            <option>Inacistencias</option>
                                                          </select>
                                                     </div>
                                                     <div class="col-md-2">
@@ -42,7 +56,70 @@
                                 <div class="card">
                                     <div class="card-block">
                                          <div class="col-md-12 ">
-                                                    <h3>Prestamo</h3>
+                                                     <h3>Gratificaciones</h3>
+                                                    <section class="example">
+                                                        <div class="table-flip-scroll">
+                                                            <table class="table table-striped table-bordered table-hover flip-content">
+                                                                <thead class="flip-header">
+                                                                    <tr>
+                                                                        <th>Motivo</th>
+                                                                        <th>Fecha</th>
+                                                                        <th>Monto</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr class="gradeA">
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </section>
+                                                     <h3>Deduciones</h3>
+                                                    <section class="example">
+                                                        <div class="table-flip-scroll">
+                                                            <table class="table table-striped table-bordered table-hover flip-content">
+                                                                <thead class="flip-header">
+                                                                    <tr>
+                                                                        <th>Motivo</th>
+                                                                        <th>Fecha</th>
+                                                                        <th>Monto</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr class="gradeA">
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </section>
+                                                    <h3>Tardeadas</h3>
+                                                    <section class="example">
+                                                        <div class="table-flip-scroll">
+                                                            <table class="table table-striped table-bordered table-hover flip-content">
+                                                                <thead class="flip-header">
+                                                                    <tr>
+                                                                        <th>Motivo</th>
+                                                                        <th>Fecha</th>
+                                                                        <th>Monto</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr class="gradeA">
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </section>
+                                                    <h3>Inacistencias</h3>
                                                     <section class="example">
                                                         <div class="table-flip-scroll">
                                                             <table class="table table-striped table-bordered table-hover flip-content">
@@ -63,19 +140,54 @@
                                                             </table>
                                                         </div>
                                                     </section>
-                                                     <h3>Bono</h3>
+                                                </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="card-block">
+                                         <div class="col-md-12">
+                                                <div class="col-md-12"> 
+                                                    <div class="col-md-2">
+                                                         <label class="alinear-vertical margen">Monto:</label>
+                                                         <input type="text" class="form-control boxed margen" />
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                         <label class="alinear-vertical margen">Plazo en Semanas:</label>
+                                                         <input type="text" class="form-control boxed margen" />
+                                                    </div>
+                                                    <div class="col-md-1">
+                                                         <a href="#"><i class="fa fa-plus-square fa-3x"></i></a>
+                                                    </div>
+                                                </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="card-block">
+                                         <div class="col-md-12 ">
+                                                     <h3>Prestamos</h3>
                                                     <section class="example">
                                                         <div class="table-flip-scroll">
                                                             <table class="table table-striped table-bordered table-hover flip-content">
                                                                 <thead class="flip-header">
                                                                     <tr>
-                                                                        <th>Motivo</th>
                                                                         <th>Fecha</th>
                                                                         <th>Monto</th>
+                                                                        <th>Plazo (SEMANAS)</th>
+                                                                        <th>Cantidad de descuento</th>
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
                                                                     <tr class="gradeA">
+                                                                        <td></td>
                                                                         <td></td>
                                                                         <td></td>
                                                                         <td></td>
@@ -84,40 +196,21 @@
                                                             </table>
                                                         </div>
                                                     </section>
-                                                     <h3>Tardeada</h3>
+                                                     <h3>Facturas</h3>
                                                     <section class="example">
                                                         <div class="table-flip-scroll">
                                                             <table class="table table-striped table-bordered table-hover flip-content">
                                                                 <thead class="flip-header">
                                                                     <tr>
-                                                                        <th>Motivo</th>
-                                                                        <th>Fecha</th>
+                                                                         <th>Fecha</th>
                                                                         <th>Monto</th>
+                                                                        <th>Plazo (SEMANAS)</th>
+                                                                        <th>Cantidad de descuento</th>
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
                                                                     <tr class="gradeA">
                                                                         <td></td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </section>
-                                                    <h3>Descuentos</h3>
-                                                    <section class="example">
-                                                        <div class="table-flip-scroll">
-                                                            <table class="table table-striped table-bordered table-hover flip-content">
-                                                                <thead class="flip-header">
-                                                                    <tr>
-                                                                        <th>Motivo</th>
-                                                                        <th>Fecha</th>
-                                                                        <th>Monto</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr class="gradeA">
                                                                         <td></td>
                                                                         <td></td>
                                                                         <td></td>
@@ -133,7 +226,6 @@
                                 </div>
                             </div>
                         </div>
-
 
 
 

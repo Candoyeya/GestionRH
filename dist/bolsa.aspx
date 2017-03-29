@@ -49,7 +49,7 @@
                                             <th>Departamento</th>
                                             <th>Puesto</th>
                                             <th>Turno</th>
-                                            <th>Jefe Directo</th>
+                                            <th>Jefe Inmedito</th>
                                             <th>Detalle</th>
                                         </tr>
                                     </thead>
@@ -60,7 +60,7 @@
                                             <td></td>
                                             <td></td>
                                             <td></td>
-                                            <td class="detalle"><a href=""><i class="fa fa-eye"></i></a></td>
+                                            <td class="detalle"><a href="#"><i class="fa fa-eye"></i></a></td>
                                         </tr>
                                     </tbody>
                                 </table>

@@ -93,7 +93,7 @@
                                     <a href="incidencias.aspx"> <i class="fa fa-pencil-square-o"></i> Incidencias </a>
                                 </li>
                                 <li>
-                                    <a href="#"> <i class="fa fa-globe"></i> Vacaciones </a>
+                                    <a href="#"> <i class="fa fa-globe"></i> Calendario </a>
                                 </li>
                             </ul>
                         </nav>

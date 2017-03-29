@@ -26,25 +26,97 @@
                                                          <input type="text" class="form-control boxed margen" />
                                                      </div>
                                                      <div class="row">
-                                                         <label class="alinear-vertical margen">Curp:</label>
-                                                         <input type="text" class="form-control boxed margen" />
+                                                         <label class="alinear-vertical margen">CP:</label>
+                                                         <input type="number" class="form-control boxed margen" />
+                                                     </div>
+                                                    <div class="row">
+                                                         <label class="alinear-vertical margen">Fecha de nacimiento:</label>
+                                                         <input type="date" class="form-control boxed margen" />
+                                                     </div>
+                                                    <div class="row">
+                                                         <label class="alinear-vertical margen">Edad:</label>
+                                                         <input type="number" class="form-control boxed margen" />
                                                      </div>
                                                 </div> 
                                                 <div class="col-md-2 ">
                                                 </div>
                                                 <div class="col-md-5">
-                                                    <div class="row">
-                                                         <label class="alinear-vertical margen">CP:</label>
-                                                         <input type="text" class="form-control boxed margen" />
-                                                     </div>
                                                      <div class="row">
                                                          <label class="alinear-vertical margen">Telefono:</label>
+                                                         <input type="number" class="form-control boxed margen" />
+                                                     </div>
+                                                     <div class="row">
+                                                         <label class="alinear-vertical margen">Celular:</label>
+                                                         <input type="number" class="form-control boxed margen" />
+                                                     </div>
+                                                     <div class="row">
+                                                         <label class="alinear-vertical margen">Lugar de Nacimiento:</label>
+                                                         <input type="text" class="form-control boxed margen" />
+                                                     </div>
+                                                    <div class="row">
+                                                         <label class="alinear-vertical margen">Sexo:</label>
+                                                         <select class="form-control">
+                                                            <option>Femenino</option>
+                                                            <option>Masculino</option>
+                                                            <option>Indistinto</option>
+                                                         </select>
+                                                     </div>
+                                                    <div class="row">
+                                                         <label class="alinear-vertical margen">Estado Civil:</label>
+                                                         <select class="form-control">
+                                                            <option>Soltero(a)</option>
+                                                            <option>Casado(a)</option>
+                                                            <option>Union Libre</option>
+                                                            <option>Divorciado(a)</option>
+                                                            <option>Viudo(a)</option>
+                                                         </select>
+                                                     </div>
+                                                </div> 
+                                            </fieldset>
+                                             <fieldset>
+                                            <legend>Documentacion</legend>
+                                                <div class="col-md-5 "> 
+                                                    <div class="row">
+                                                         <label class="alinear-vertical margen">Curp:</label>
                                                          <input type="text" class="form-control boxed margen" />
                                                      </div>
                                                      <div class="row">
                                                          <label class="alinear-vertical margen">NNS:</label>
+                                                         <input type="number" class="form-control boxed margen" />
+                                                     </div>
+                                                     <div class="row">
+                                                         <label class="alinear-vertical margen">Licencia de Manejo:</label>
+                                                         <select class="form-control">
+                                                            <option>SI</option>
+                                                            <option>NO</option>
+                                                         </select>
+                                                     </div>
+                                                    <div class="row">
+                                                         <label class="alinear-vertical margen">Numero de Licencia:</label>
+                                                         <input type="number" class="form-control boxed margen" />
+                                                     </div>
+                                                    
+                                                </div> 
+                                                <div class="col-md-2 ">
+                                                </div>
+                                                <div class="col-md-5">
+                                                     <div class="row">
+                                                         <label class="alinear-vertical margen">RFC:</label>
                                                          <input type="text" class="form-control boxed margen" />
                                                      </div>
+                                                    <div class="row">
+                                                         <label class="alinear-vertical margen">Infonavit:</label>
+                                                         <input type="text" class="form-control boxed margen" />
+                                                     </div>
+                                                    <div class="row">
+                                                         <label class="alinear-vertical margen">Clase de Licencia:</label>
+                                                         <select class="form-control">
+                                                            <option>Clase 1</option>
+                                                            <option>Clase 2</option>
+                                                            <option>Clase 3</option>
+                                                         </select>
+                                                     </div>
+                                                     
                                                 </div> 
                                             </fieldset>
                                             <fieldset>
