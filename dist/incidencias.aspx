@@ -59,7 +59,7 @@
                                             <td></td>
                                             <td></td>
                                             <td></td>
-                                            <td class="detalle"><a href=""><i class="fa fa-eye "></i></a></td>
+                                            <td class="detalle"><a href="Incidencias_add.aspx"><i class="fa fa-eye "></i></a></td>
                                         </tr>
                                     </tbody>
                                 </table>
