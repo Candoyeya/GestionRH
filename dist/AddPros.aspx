@@ -25,9 +25,6 @@
                 <a href="#referencia" class="nav-link" data-target="#referencia" aria-controls="referencia" data-toggle="tab" role="tab" aria-expanded="false">Referencias</a>
                 </li>
                 <li class="nav-item">
-                <a href="#antecedentes" class="nav-link" data-target="#antecedentes" aria-controls="antecedentes" data-toggle="tab" role="tab" aria-expanded="false">Antecedentes</a>
-                </li>
-                <li class="nav-item">
                 <a href="#evaluacion" class="nav-link" data-target="#evaluacion" aria-controls="evaluacion" data-toggle="tab" role="tab" aria-expanded="false">Evaluacion</a>
                 </li>
             </ul>
@@ -405,63 +402,6 @@
                                                                         <th>Telefono</th>
                                                                         <th>Ocupacion</th>
                                                                         <th>Tiempo de Conocerlo</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr class="gradeA">
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </section>
-                                                </div>
-                                                </div>
-<!--------------------------------------------------------------------------Antecedentes ------------------------------------------------------------------------------>
-                                                <div class="tab-pane fade" id="antecedentes" aria-expanded="false">
-                                                      <div class="col-md-12"> 
-                                                    <div class="col-md-3">
-                                                         <label class="alinear-vertical margen">Nombre:</label>
-                                                         <input type="text"  class="form-control boxed margen" />
-                                                    </div>
-                                                    <div class="col-md-2">
-                                                         <label class="alinear-vertical margen">Puesto:</label>
-                                                         <select class="form-control">
-                                                            <option>Selecione</option>
-                                                            <option>Sistemas</option>
-                                                         </select>
-                                                    </div>
-                                                    <div class="col-md-1">
-                                                         <label class="alinear-vertical margen">Año:</label>
-                                                         <input type="text" class="form-control boxed margen" />
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                         <label class="alinear-vertical margen">Referencia:</label>
-                                                         <input type="text" class="form-control boxed margen" />
-                                                    </div>
-                                                    <div class="col-md-2">
-                                                         <label class="alinear-vertical margen">Telefono:</label>
-                                                         <input type="text" class="form-control boxed margen" />
-                                                    </div>
-                                                    <div class="col-md-1">
-                                                         <a href="#"><i class="fa fa-plus-square fa-3x"></i></a>
-                                                    </div>
-                                                </div> 
-                                                <div class="col-md-12 ">
-                                                    <section class="example">
-                                                        <div class="table-flip-scroll">
-                                                            <table class="table table-striped table-bordered table-hover flip-content">
-                                                                <thead class="flip-header">
-                                                                    <tr>
-                                                                        <th>Nombre de la Empresa</th>
-                                                                        <th>Puesto</th>
-                                                                        <th>Años</th>
-                                                                        <th>Referencia</th>
-                                                                        <th>Telefono</th>
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
