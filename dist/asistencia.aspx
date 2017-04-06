@@ -72,8 +72,8 @@
                                         <td></td>
                                         <td></td>
                                         <td></td>
-                                        <t>></td>
-                                        <td class="detalle"><a href=""><i class="fa fa-eye "></i></a></td>
+                                        <td></td>
+                                        <td class="detalle"><a href="#"><i class="fa fa-eye "></i></a></td>
                                     </tr>
                                 </tbody>
                             </table>
