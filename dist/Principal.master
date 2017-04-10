@@ -43,11 +43,11 @@
                     <div class="header-block header-block-nav">
                         <ul class="nav-profile">
                             <li class="notifications new">
-                                <a href="" data-toggle="dropdown"> <i class="fa fa-bell-o"></i>  </a>
+                                <a href="#" data-toggle="dropdown"> <i class="fa fa-bell-o"></i>  </a>
                                 <div class="dropdown-menu notifications-dropdown-menu">
                                     <footer>
                                         <ul>
-                                            <li> <a href="">
+                                            <li> <a href="#">
     			                                    No hay Notificaciones
     			                                  </a> </li>
                                         </ul>
@@ -93,7 +93,7 @@
                                     <a href="incidencias.aspx"> <i class="fa fa-pencil-square-o"></i> Incidencias </a>
                                 </li>
                                 <li>
-                                    <a href="#"> <i class="fa fa-globe"></i> Calendario </a>
+                                    <a href="calendario.aspx"> <i class="fa fa-globe"></i> Calendario </a>
                                 </li>
                             </ul>
                         </nav>
