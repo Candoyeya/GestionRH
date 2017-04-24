@@ -29,55 +29,71 @@
     </head>
 
     <body>
-        <div class="auth">
-            <div class="auth-container">
-                <div class="card">
-                    <header class="auth-header">
-                        <h1 class="auth-title brand">
-                            <div class="logo">  <img src="img/logo.png" class="logo-2" width="40px;" height="40px;"> </div> Recursos Humanos </h1>
-                    </header>
-                    <div class="auth-content">
-                        <p class="text-xs-center">Inicio de sesion</p>
-                        <form id="login-form" action="/index.apsx" method="GET" novalidate="">
-                            <div class="form-group"> <label for="username">Usuario</label> <input type="email" class="form-control underlined" name="username" id="username" placeholder="Tu Usuario" required> </div>
-                            <div class="form-group"> <label for="password">Contraseña</label> <input type="password" class="form-control underlined" name="password" id="password" placeholder="Tu Contraseña" required> </div>
-                            <div class="form-group"> <label for="remember">
-            <input class="checkbox" id="remember" type="checkbox"> 
-            <span>Recordar</span>
-          </label> <a href="reset.html" class="forgot-btn pull-right">¿Olvidaste tu Contraseña?</a> </div>
-                            <div class="form-group"> <button type="submit" class="btn btn-block btn-primary">Iniciar Sesion</button> </div>
-                        </form>
+        
+            <div class="auth">
+                <div class="auth-container">
+                    <div class="card">
+                        <header class="auth-header">
+                            <h1 class="auth-title brand">
+                                <div class="logo">  <img src="img/logo.png" class="logo-2" width="40px;" height="40px;"> </div> Recursos Humanos </h1>
+                        </header>
+                        <div class="auth-content">
+                            <p class="text-xs-center">Inicio de sesion</p>
+                            <form runat="server">
+                                <div class="form-group"> 
+                                    <label for="username">Usuario</label> 
+                                    <input runat="server" type="text" class="form-control underlined" name="username" id="username" placeholder="Tu Usuario" required/> 
+                                </div>
+                                <div class="form-group"> 
+                                    <label for="password">Contraseña</label>                                     
+                                    <input runat="server" type="password" class="form-control underlined" name="password" id="password" placeholder="Tu Contraseña" required/> 
+                                </div>
+                                <div class="form-group"> 
+                                    <label for="remember">
+                                        <input class="checkbox" id="remember" type="checkbox"> 
+                                        <span>Recordar</span>
+                                    </label> 
+                                    <a href="reset.html" class="forgot-btn pull-right">¿Olvidaste tu Contraseña?</a> 
+                                </div>
+                                <div class="form-group" runat="server">
+                                    <asp:Button id="BtnEntrar" runat="server" CssClass="btn btn-block btn-primary" Text="Iniciar Sesión"/>                                    
+                                </div>
+                                <div class="form-group text-center">
+                                    <div runat="server" id="Alertamail" style ="display:none " class="alert alert-danger" role="alert"><b>Usuario o contraseña incorrecta</b></div> 
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Reference block for JS -->
-        <div class="ref" id="ref">
-            <div class="color-primary"></div>
-            <div class="chart">
+            <!-- Reference block for JS -->
+            <div class="ref" id="ref">
                 <div class="color-primary"></div>
-                <div class="color-secondary"></div>
+                <div class="chart">
+                    <div class="color-primary"></div>
+                    <div class="color-secondary"></div>
+                </div>
             </div>
-        </div>
-        <script>
-            (function(i, s, o, g, r, a, m)
-            {
-                i['GoogleAnalyticsObject'] = r;
-                i[r] = i[r] || function()
+            <script>
+                (function(i, s, o, g, r, a, m)
                 {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
-                a = s.createElement(o),
-                    m = s.getElementsByTagName(o)[0];
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-            ga('create', 'UA-80463319-2', 'auto');
-            ga('send', 'pageview');
-        </script>
-        <script src="js/vendor.js"></script>
-        <script src="js/app.js"></script>
+                    i['GoogleAnalyticsObject'] = r;
+                    i[r] = i[r] || function()
+                    {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
+                    a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                    a.async = 1;
+                    a.src = g;
+                    m.parentNode.insertBefore(a, m)
+                })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+                ga('create', 'UA-80463319-2', 'auto');
+                ga('send', 'pageview');
+            </script>
+            <script src="js/vendor.js"></script>
+            <script src="js/app.js"></script>
+        
     </body>
 
 </html>
