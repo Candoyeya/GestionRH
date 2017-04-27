@@ -13,7 +13,7 @@ Partial Class dist_Login
         '--Creacion 2017/04/24
         Try
             '--Sentencia query
-            Dim sql_login As String = "Select TOP 1 Res='Y' From GestionRH.dbo.TUGRH T0 Where T0.codigoempleado='" & username.Value & "' and T0.contrasena='" & password.Value & "'"
+            Dim sql_login As String = "Select TOP 1 Res='Y',T0.codigoempleado From GestionRH.dbo.TUGRH T0 Where T0.Usuario='" & username.Value & "' and T0.contrasena='" & password.Value & "'"
             cnn2.Open()
             cmd2 = New SqlClient.SqlCommand(sql_login, cnn2)
             dr2 = cmd2.ExecuteReader()
@@ -22,6 +22,7 @@ Partial Class dist_Login
             If dr2.HasRows Then
                 While dr2.Read
                     Resultado = dr2.Item("Res")
+                    Session("codigoempleado") = dr2.Item("codigoempleado")
                     'Reg = Reg + 1
                 End While
             End If
@@ -30,8 +31,6 @@ Partial Class dist_Login
             dr2.Close()
 
             If Resultado = "Y" Then
-                '--Guardar Codigoempleado
-                Session("codigoempleado") = username.Value
                 '--Sentencia Consulta nombre
                 Dim sql_Datos As String = "Select Nombre=T0.nombre+' '+T0.apellidopaterno+' '+T0.apellidomaterno " &
                                       "From NOM10001 T0 " &
