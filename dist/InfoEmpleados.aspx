@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/dist/Principal.master" AutoEventWireup="false" CodeFile="asistencia.aspx.vb" Inherits="dist_asistencia" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/dist/Principal.master" AutoEventWireup="false" CodeFile="InfoEmpleados.aspx.vb" Inherits="dist_InfoEmpleados" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
@@ -13,7 +13,7 @@
                                           <img src="#">
                                        </div>
                                        <div class="col-md-6">
-                                          <h3>Oscar Valladares</h3>
+                                          <h3><span id="SpEmpleado" runat="server"></span></h3>
                                        </div>
                                     </div>
                                 </div>
@@ -31,29 +31,28 @@
                                                 <div class="col-md-12">
                                                     <div class="row">
                                                         <label class="alinear-vertical margen">Domicilio:</label>
-                                                        <input type="text" readonly="readonly" class="form-control boxed margen" />
+                                                        <input id="IDomicilio" runat="server" type="text" readonly="readonly" class="form-control boxed margen" />
                                                     </div>
                                                     <div class="row">
                                                         <label class="alinear-vertical margen">CP:</label>
-                                                         <input type="text" readonly="readonly" class="form-control boxed margen" />
+                                                         <input id="ICP" runat="server" type="text" readonly="readonly" class="form-control boxed margen" />
                                                     </div>
                                                     <div class="row">
                                                         <label class="alinear-vertical margen">Ciudad:</label>
-                                                        <input type="text" readonly="readonly" class="form-control boxed margen" />
+                                                        <input id="Iciudad" runat="server" type="text" readonly="readonly" class="form-control boxed margen" />
                                                     </div>
                                                     <div class="row">
                                                         <label class="alinear-vertical margen">Telefono:</label>
-                                                        <input type="text" readonly="readonly" class="form-control boxed margen" />
+                                                        <input id="ITelefono" runat="server" type="text" readonly="readonly" class="form-control boxed margen" />
                                                     </div>
                                                     <div class="row">
                                                         <label class="alinear-vertical margen">Curp:</label>
-                                                        <input type="text" readonly="readonly" class="form-control boxed margen" />
+                                                        <input id="ICurp" runat="server" type="text" readonly="readonly" class="form-control boxed margen" />
                                                     </div>
                                                     <div class="row">
                                                         <label class="alinear-vertical">Estado Civil:</label>
-                                                        <input type="text" readonly="readonly" class="form-control boxed" />
-                                                    </div>
-                                                   
+                                                        <input id="IEstadoCivil" runat="server" type="text" readonly="readonly" class="form-control boxed" />
+                                                    </div>                                                   
                                                 </div>
                                               
                                             </fieldset>
@@ -61,35 +60,32 @@
                                         <div class="col-md-6">
                                              <fieldset>
                                                <legend>Datos Generales</legend>
-
                                                  <div class="col-md-12">
                                                      <div class="row">
                                                          <label class="alinear-vertical margen">Puesto:</label>
-                                                         <input type="text" readonly="readonly" class="form-control boxed margen" />
+                                                         <input id="IPuesto" runat="server" type="text" readonly="readonly" class="form-control boxed margen" />
                                                      </div>
                                                      <div class="row">
                                                          <label class="alinear-vertical margen">Departamento:</label>
-                                                         <input type="text" readonly="readonly" class="form-control boxed margen" />
+                                                         <input id="IDepartamento" runat="server" type="text" readonly="readonly" class="form-control boxed margen" />
                                                      </div>
                                                      <div class="row">
                                                          <label class="alinear-vertical margen">Area:</label>
-                                                         <input type="text" readonly="readonly" class="form-control boxed margen" />
+                                                         <input id="IArea" runat="server" type="text" readonly="readonly" class="form-control boxed margen" />
                                                      </div>
                                                      <div class="row">
                                                          <label class="alinear-vertical margen">Turno:</label>
-                                                         <input type="text" readonly="readonly" class="form-control boxed margen" />
+                                                         <input id="ITurno" runat="server" type="text" readonly="readonly" class="form-control boxed margen" />
                                                      </div>
                                                      <div class="row">
                                                          <label class="alinear-vertical margen">NSS:</label>
-                                                         <input type="text" readonly="readonly" class="form-control boxed margen" />
+                                                         <input id="INSS" runat="server" type="text" readonly="readonly" class="form-control boxed margen" />
                                                      </div>
                                                      <div class="row">
                                                          <label class="alinear-vertical">Infonavit:</label>
-                                                         <input type="text" readonly="readonly" class="form-control boxed" />
+                                                         <input id="IInfonavit" runat="server" type ="text" readonly="readonly" class="form-control boxed" />
                                                      </div>
                                                  </div>
-
-                                    
                                              </fieldset>
                                         </div>
 

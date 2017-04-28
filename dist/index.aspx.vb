@@ -14,7 +14,8 @@ Partial Class dist_index
             DataTable.Columns.AddRange(New DataColumn() {New DataColumn("Nombre", GetType(String)),
                                                        New DataColumn("Departamento", GetType(String)),
                                                        New DataColumn("Puesto", GetType(String)),
-                                                       New DataColumn("Turno", GetType(String))})
+                                                       New DataColumn("Turno", GetType(String)),
+                                                       New DataColumn("codigoempleado", GetType(String))})
             cnn.Open()
             cmd = New SqlClient.SqlCommand(Sql, cnn)
             dr = cmd.ExecuteReader()
@@ -25,7 +26,8 @@ Partial Class dist_index
                     DataTable.Rows.Add(dr.Item("Nombre"),
                                        dr.Item("Departamento"),
                                        dr.Item("Puesto"),
-                                       dr.Item("Turno"))
+                                       dr.Item("Turno"),
+                                       dr.Item("codigoempleado"))
                     'Reg = Reg + 1
                 End While
             End If
@@ -81,7 +83,7 @@ Partial Class dist_index
         '--actualizacion 2017/03/24
         If Not Page.IsPostBack Then
             Departamentos()
-            Dim SqlEmpleados As String = "Select Nombre=T0.nombrelargo,Departamento=T1.descripcion,Puesto=T2.descripcion,Turno=T3.descripcion " &
+            Dim SqlEmpleados As String = "Select Nombre=T0.nombrelargo,Departamento=T1.descripcion,Puesto=T2.descripcion,Turno=T3.descripcion,T0.codigoempleado " &
                                         "From NOM10001 T0 " &
                                             "Inner Join NOM10003 T1 On (T1.iddepartamento=T0.iddepartamento) " &
                                             "Inner Join NOM10006 T2 On (T2.idpuesto=T0.idpuesto) " &
@@ -95,11 +97,11 @@ Partial Class dist_index
     Protected Sub BtnBEmpleado_Click(sender As Object, e As EventArgs) Handles BtnBEmpleado.Click
         '--Creacion 2017/03/22 ---Enter en Textbox
         '--actualizacion 2017/03/27
-        Dim SqlEmpleados As String = "Select Nombre=T0.nombrelargo,Departamento=T1.descripcion,Puesto=T2.descripcion,Turno=T3.descripcion " &
+        Dim SqlEmpleados As String = "Select Nombre=T0.nombrelargo,Departamento=T1.descripcion,Puesto=T2.descripcion,Turno=T3.descripcion,T0.codigoempleado " &
                                     "From NOM10001 T0 " &
                                         "Inner Join NOM10003 T1 On (T1.iddepartamento=T0.iddepartamento) " &
                                         "Inner Join NOM10006 T2 On (T2.idpuesto=T0.idpuesto) " &
-                                        "Inner Join NOM10032 T3 On (T3.idturno=T0.idturno) "
+                                        "Inner Join  T3 On (T3.idturno=T0.idturno) "
         If Departamento.SelectedValue = "00" Then
             SqlEmpleados = SqlEmpleados + "where T0.estadoempleado='A' and T0.nombrelargo Like '%" & nombre.Text & "%' "
         Else
@@ -114,7 +116,7 @@ Partial Class dist_index
     Protected Sub Departamento_SelectedIndexChanged() Handles Departamento.SelectedIndexChanged
         '--Creacion 2017/03/23 ---- Realizar busqueda al cambiar de departamento
         '--actualizacion 2017/03/27
-        Dim SqlDepartamento As String = "Select Nombre=T0.nombrelargo,Departamento=T1.descripcion,Puesto=T2.descripcion,Turno=T3.descripcion " &
+        Dim SqlDepartamento As String = "Select Nombre=T0.nombrelargo,Departamento=T1.descripcion,Puesto=T2.descripcion,Turno=T3.descripcion,T0.codigoempleado " &
                                         "From NOM10001 T0 " &
                                             "Inner Join NOM10003 T1 On (T1.iddepartamento=T0.iddepartamento) " &
                                             "Inner Join NOM10006 T2 On (T2.idpuesto=T0.idpuesto) " &

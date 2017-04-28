@@ -11,6 +11,7 @@ Partial Class dist_Login
 
     Protected Sub BtnEntrar_Click(sender As Object, e As EventArgs) Handles BtnEntrar.Click
         '--Creacion 2017/04/24
+        '--Actualizacion 26/04/2017
         Try
             '--Sentencia query
             Dim sql_login As String = "Select TOP 1 Res='Y',T0.codigoempleado From GestionRH.dbo.TUGRH T0 Where T0.Usuario='" & username.Value & "' and T0.contrasena='" & password.Value & "'"
@@ -65,5 +66,4 @@ Partial Class dist_Login
             ClientScript.RegisterStartupScript(Me.[GetType](), "aleasrt", "alert('" & fail & "');  ", True)
         End Try
     End Sub
-
 End Class

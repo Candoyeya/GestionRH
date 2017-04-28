@@ -46,11 +46,10 @@
                                             <asp:BoundField HeaderText="Departamento" DataField="Departamento" ItemStyle-CssClass="active"/>
                                             <asp:BoundField HeaderText="Puesto" DataField="Puesto" ItemStyle-CssClass="active"/>
                                             <asp:BoundField HeaderText="Turno" DataField="Turno" ItemStyle-CssClass="active"/>
-                                            <asp:TemplateField HeaderText="Detalles" ItemStyle-VerticalAlign="Top" ItemStyle-HorizontalAlign="Center">
-                                                <ItemTemplate>
-                                                    <a href="InfoEmpleados.aspx"><i class="fa fa-eye fa-2x"></i></a>
-                                                </ItemTemplate>
-                                            </asp:TemplateField>
+                                            <asp:HyperLinkField HeaderText="Detalles" 
+                                                            DataNavigateUrlFields="codigoempleado" 
+                                                            DataNavigateUrlFormatString="../../dist/InfoEmpleados.aspx?codigoempleado={0}" 
+                                                            Text="<i class='fa fa-eye fa-2x'></i>" />
                                         </Columns>
                                     </asp:GridView>                                       
                                 </div>
