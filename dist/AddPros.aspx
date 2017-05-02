@@ -269,91 +269,78 @@
                                                 </div>
 <!--------------------------------------------------------------------------Empleos------------------------------------------------------------------------------>
                                                 <div class="tab-pane fade" id="empleos" aria-expanded="false">
-                                                  <div class="col-md-12"> 
-                                                     <div class="col-md-3">
-                                                         <label class="alinear-vertical margen">Nombre:</label>
-                                                         <input type="text"  class="form-control boxed margen" />
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                         <label class="alinear-vertical margen">Telefono:</label>
-                                                         <input type="text"  class="form-control boxed margen" />
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                         <label class="alinear-vertical margen">Puesto:</label>
-                                                         <input type="text" class="form-control boxed margen" />
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                         <label class="alinear-vertical margen">Fecha Inicio:</label>
-                                                         <input type="date" class="form-control boxed margen" />
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                         <label class="alinear-vertical margen">Fecha Fin:</label>
-                                                         <input type="date" class="form-control boxed margen" />
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                         <label class="alinear-vertical margen">Sueldo:</label>
-                                                         <input type="number" class="form-control boxed margen" />
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                         <label class="alinear-vertical margen">Nombre de su jefe:</label>
-                                                         <input type="text" class="form-control boxed margen" />
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                         <label class="alinear-vertical margen">Puesto de su jefe:</label>
-                                                         <input type="text" class="form-control boxed margen" />
-                                                    </div>
-                                                    <div class="col-md-11">
-                                                         <label class="alinear-vertical ">Motivo de Separacion:</label>
-                                                         <input type="text" class="form-control boxed margen" />
-                                                    </div>
-                                                    <div class="col-md-1">
-                                                         <a href="#"><i class="fa fa-plus-square fa-3x"></i></a>
-                                                    </div>
-                                                </div> 
-                                                <div class="col-md-12 ">
-                                                    <section class="example">
-                                                        <div class="table-flip-scroll">
-                                                            <table class="table table-striped table-bordered table-hover flip-content">
-                                                                <thead class="flip-header">
-                                                                    <tr>
-                                                                        <th>Nombre</th>
-                                                                        <th>Telefono</th>
-                                                                        <th>Puesto</th>
-                                                                        <th>Fecha Inicio</th>
-                                                                        <th>Fecha Fin</th>
-                                                                        <th>Sueldo</th>
-                                                                        <th>Nombre Jefe</th>
-                                                                        <th>Puesto Jefe</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr class="gradeA">
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                             <table class="table table-striped table-bordered table-hover flip-content">
-                                                                <thead class="flip-header">
-                                                                    <tr>
-                                                                        <th>Motivo de separacion</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr class="gradeA">
-                                                                        <td></td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
+                                                    <asp:UpdatePanel id="UpdatePanel3" UpdateMode="Conditional" runat="server">
+                                                    <ContentTemplate>  
+                                                    <div class="col-md-12"> 
+                                                        <div class="col-md-3">
+                                                             <label class="alinear-vertical margen">Nombre:</label>
+                                                             <input Id="INombreEMP" runat="server" type="text"  class="form-control boxed margen" />
                                                         </div>
-                                                    </section>
-                                                </div>
+                                                        <div class="col-md-3">
+                                                             <label class="alinear-vertical margen">Telefono:</label>
+                                                             <input Id="ITelefonoEMP" runat="server" type="text"  class="form-control boxed margen" />
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                             <label class="alinear-vertical margen">Puesto:</label>
+                                                             <input Id="IPuestoEMP" runat="server" type="text" class="form-control boxed margen" />
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                             <label class="alinear-vertical margen">Fecha Inicio:</label>
+                                                             <asp:TextBox ID="IFechaIniEMP" runat="server" placeholder="" type="date" CssClass="form-control boxed margen"></asp:TextBox>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                             <label class="alinear-vertical margen">Fecha Fin:</label>
+                                                             <asp:TextBox ID="IFechaFinEMP" runat="server" placeholder="" type="date" CssClass="form-control boxed margen"></asp:TextBox>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                             <label class="alinear-vertical margen">Sueldo:</label>
+                                                             <asp:TextBox ID="ISueldoEMP" runat="server" placeholder="" type="number" CssClass="form-control boxed margen"></asp:TextBox>                                                         
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                             <label class="alinear-vertical margen">Nombre de su jefe:</label>
+                                                             <input Id="INomJefeEMP" runat="server" type="text" class="form-control boxed margen" />
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                             <label class="alinear-vertical margen">Puesto de su jefe:</label>
+                                                             <input Id="IPuestoJefeEMP" runat="server" type="text" class="form-control boxed margen" />
+                                                        </div>
+                                                        <div class="col-md-11">
+                                                             <label class="alinear-vertical ">Motivo de Separacion:</label>
+                                                             <input Id="IMovSep" runat="server" type="text" class="form-control boxed margen" />
+                                                        </div>
+                                                        <div class="col-md-1">
+                                                            <br />
+                                                            <asp:LinkButton id="BtnAddEmpleo" runat="server"><i class="fa fa-plus-square fa-3x"></i></asp:LinkButton>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="col-md-12 ">
+                                                        <section class="example">
+                                                            <div class="table-flip-scroll">
+                                                                <asp:GridView id="GVEmpleos" runat="server" GridLines="None" CssClass="table table-striped table-bordered table-hover flip-content" 
+                                                                                ShowHeaderWhenEmpty="true" AutoGenerateColumns="False" AutoPostBack="true" CausesValidation="false">
+                                                                    <Columns>
+                                                                        <asp:BoundField HeaderText="Nombre" DataField="Nombre" ItemStyle-CssClass="active"/>
+                                                                        <asp:BoundField HeaderText="Telefono" DataField="Telefono" ItemStyle-CssClass="active"/>
+                                                                        <asp:BoundField HeaderText="Puesto" DataField="Puesto" ItemStyle-CssClass="active"/>
+                                                                        <asp:BoundField HeaderText="Fecha Inicio" DataField="Fecha_Inicio" ItemStyle-CssClass="active"/>
+                                                                        <asp:BoundField HeaderText="Fecha Final" DataField="Fecha_Final" ItemStyle-CssClass="active"/>
+                                                                        <asp:BoundField HeaderText="Sueldo" DataField="Sueldo" ItemStyle-CssClass="active"/>
+                                                                        <asp:BoundField HeaderText="Nombre Jefe" DataField="Nom_Jefe" ItemStyle-CssClass="active"/>
+                                                                        <asp:BoundField HeaderText="Puesto Jefe" DataField="Pues_Jefe" ItemStyle-CssClass="active"/>
+                                                                    </Columns>
+                                                                </asp:GridView>  
+                                                             
+                                                                <asp:GridView id="GvMotivoE" runat="server" GridLines="None" CssClass="table table-striped table-bordered table-hover flip-content" 
+                                                                                ShowHeaderWhenEmpty="true" AutoGenerateColumns="False" AutoPostBack="true" CausesValidation="false">
+                                                                    <Columns>
+                                                                        <asp:BoundField HeaderText="Motivo de separacion" DataField="Mot_Separacion" ItemStyle-CssClass="active"/>
+                                                                    </Columns>
+                                                                </asp:GridView> 
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                    </ContentTemplate>
+                                                    </asp:UpdatePanel>
                                                 </div>
 <!--------------------------------------------------------------------------Referencia------------------------------------------------------------------------------>
                                                 <div class="tab-pane fade" id="referencia" aria-expanded="false">
