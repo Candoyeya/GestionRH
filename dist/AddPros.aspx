@@ -147,11 +147,11 @@
                                                     <asp:UpdatePanel id="UpdatePanel2" UpdateMode="Conditional" runat="server">
                                                     <ContentTemplate>  
                                                         <div class="col-md-12"> 
-                                                            <div class="col-md-2">
+                                                            <div class="col-md-4">
                                                                  <label class="alinear-vertical margen">Nombre:</label>
                                                                  <input Id="INombreDF" runat="server" type="text" class="form-control boxed margen" />
                                                             </div>
-                                                            <div class="col-md-2">
+                                                            <div class="col-md-3">
                                                                  <label class="alinear-vertical margen">Parentesco:</label>
                                                                  <select Id="SParentesco" runat="server" class="form-control">
                                                                      <option value="Padre">Padre</option>
@@ -160,6 +160,14 @@
                                                                      <option value="Hijos(as)">Hijos(as)</option>
                                                                  </select>
                                                             </div>
+                                                             <div class="col-md-4">
+                                                                 <label class="alinear-vertical margen">Vive Con:</label>
+                                                                 <input Id="IviveCon" runat="server" type="text" class="form-control boxed margen" />
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                                 <label class="alinear-vertical margen">Edad:</label>
+                                                                <asp:TextBox ID="IEdadF" runat="server" placeholder="" type="number" CssClass="form-control boxed margen"></asp:TextBox>
+                                                            </div>
                                                             <div class="col-md-2">
                                                                  <label class="alinear-vertical margen">Vive:</label>
                                                                  <select Id="SVive" runat="server" class="form-control">
@@ -167,17 +175,13 @@
                                                                     <option value="No">No</option>
                                                                  </select>
                                                             </div>
-                                                            <div class="col-md-2">
+                                                            <div class="col-md-4">
                                                                  <label class="alinear-vertical margen">Direccion:</label>
                                                                  <input Id="IDireccionDF" runat="server" type="text" class="form-control boxed margen" />
                                                             </div>
-                                                            <div class="col-md-2">
+                                                            <div class="col-md-3">
                                                                  <label class="alinear-vertical margen">Ocupacion:</label>
                                                                  <input Id="IOcupacionF" runat="server" type="text" class="form-control boxed margen" />
-                                                            </div>
-                                                            <div class="col-md-1">
-                                                                 <label class="alinear-vertical margen">Edad:</label>
-                                                                 <input Id="IEdadF" runat="server" type="text" class="form-control boxed margen" />
                                                             </div>
                                                             <div class="col-md-1">
                                                                 <br />
@@ -192,6 +196,7 @@
                                                                 <Columns>
                                                                     <asp:BoundField HeaderText="Nombre" DataField="Nombre" ItemStyle-CssClass="active"/>
                                                                     <asp:BoundField HeaderText="Parentesco" DataField="Parentesco" ItemStyle-CssClass="active"/>
+                                                                    <asp:BoundField HeaderText="ViveCon" DataField="ViveCon" ItemStyle-CssClass="active"/>
                                                                     <asp:BoundField HeaderText="Vive" DataField="Vive" ItemStyle-CssClass="active"/>
                                                                     <asp:BoundField HeaderText="Direccion" DataField="Direccion" ItemStyle-CssClass="active"/>
                                                                     <asp:BoundField HeaderText="Ocupacion" DataField="Ocupacion" ItemStyle-CssClass="active"/>

@@ -34,7 +34,7 @@ Partial Class dist_AddPros
             DataTableDF = Session("TempGVDF")
 
             '--Llenar Filas
-            DataTableDF.Rows.Add(INombreDF.Value, SParentesco.Value, SVive.Value, IDireccionDF.Value, IOcupacionF.Value, IEdadF.Value)
+            DataTableDF.Rows.Add(INombreDF.Value, SParentesco.Value, IviveCon.Value, SVive.Value, IDireccionDF.Value, IOcupacionF.Value, IEdadF.Text)
 
             DataTableDF.AcceptChanges()
             '----Agregar los datos a gridview
@@ -111,6 +111,7 @@ Partial Class dist_AddPros
         Try
             DataTableDF.Columns.AddRange(New DataColumn() {New DataColumn("Nombre", GetType(String)),
                                                            New DataColumn("Parentesco", GetType(String)),
+                                                           New DataColumn("ViveCon", GetType(String)),
                                                            New DataColumn("Vive", GetType(String)),
                                                            New DataColumn("Direccion", GetType(String)),
                                                            New DataColumn("Ocupacion", GetType(String)),
@@ -154,10 +155,11 @@ Partial Class dist_AddPros
     Protected Sub LimpiarDF()
         INombreDF.Value = Nothing
         SParentesco.SelectedIndex = 0
+        IviveCon.Value = Nothing
         SVive.SelectedIndex = 0
         IDireccionDF.Value = Nothing
         IOcupacionF.Value = Nothing
-        IEdadF.Value = Nothing
+        IEdadF.Text = Nothing
 
     End Sub
 
