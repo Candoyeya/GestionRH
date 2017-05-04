@@ -104,7 +104,7 @@
                                                              <input type="text" class="form-control boxed margen" />
                                                          </div>
                                                          <div class="row">
-                                                             <label class="alinear-vertical margen">NNS:</label>
+                                                             <label class="alinear-vertical margen">NSS:</label>
                                                              <input type="number" class="form-control boxed margen" />
                                                          </div>
                                                          <div class="row">
