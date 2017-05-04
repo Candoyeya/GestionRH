@@ -26,7 +26,7 @@
                 </fieldset>
             </div>
             <div class="col-md-4">
-                <a href="AddPros.aspx" class="btn btn-primary-outline center addpro"> <i class="fa fa-plus-square"></i> Añadir Prospecto </i> </a>
+                <a href="AddPros.aspx" class="btn btn-primary-outline center addpro"> <i class="fa fa-plus-square"></i> Añadir Prospecto  </a>
                                 
             </div>
                         

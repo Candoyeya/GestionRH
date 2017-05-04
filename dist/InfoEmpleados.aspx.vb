@@ -30,16 +30,16 @@ Partial Class dist_InfoEmpleados
                 While dr.Read
                     'dr.Item("")
                     SpEmpleado.InnerText = dr.Item("nombrelargo")
-                    IDomicilio.Value = dr.Item("direccion")
+                    ICalle.Value = dr.Item("Calle")
                     ICP.Value = dr.Item("codigopostal")
                     Iciudad.Value = dr.Item("poblacion")
-                    ITelefono.Value = dr.Item("telefono")
                     ICurp.Value = dr.Item("Curp")
                     IEstadoCivil.Value = dr.Item("Estado")
-                    IPuesto.Value = dr.Item("Puesto")
-                    IDepartamento.Value = dr.Item("Departamento")
-                    ITurno.Value = dr.Item("Turno")
+                    IFonacot.Value = dr.Item("Fonacot")
+                    IInfonavit.Value = dr.Item("Infonavit")
                     INSS.Value = dr.Item("numerosegurosocial")
+                    IRFC.Value = dr.Item("Rfc")
+                    INumero.Value = dr.Item("Numero")
                 End While
             End If
 

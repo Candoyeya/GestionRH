@@ -21,7 +21,7 @@
                             </select>
                     </div>
                     <div class="col-md-2">
-                        <a href="" class="btn btn-primary-outline center"> <i class="fa fa-search"></i> Buscar </i> </a>
+                        <a href="" class="btn btn-primary-outline center"> <i class="fa fa-search"></i> Buscar  </a>
                     </div>
                 </fieldset>
             </div>
@@ -36,7 +36,7 @@
                     <div class="card-block">
 <!----------------------------------------------------Alamcen1-------------------------------------------------------------------->
                         <fieldset>
-                            <legend>Alamen1</legend>
+                            <legend>Almacen1</legend>
                             <section class="example">
                                 <div class="table-flip-scroll">
                                     <table class="table table-striped table-bordered table-hover flip-content">
@@ -53,7 +53,7 @@
                                                 <td></td>
                                                 <td></td>
                                                 <td></td>
-                                                <td class="detalle"><a href=""><i class="fa fa-eye"></i></a></td>
+                                                <td class="detalle"><a href="Des_puesto.aspx"><i class="fa fa-eye"></i></a></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -62,7 +62,7 @@
                             </fieldset>
 <!----------------------------------------------------Alamcen2-------------------------------------------------------------------->
                             <fieldset>
-                            <legend>Alamcen2</legend>
+                            <legend>Almacen2</legend>
                             <section class="example">
                                 <div class="table-flip-scroll">
                                     <table class="table table-striped table-bordered table-hover flip-content">

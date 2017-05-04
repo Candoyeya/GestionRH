@@ -18,7 +18,7 @@
                         CommandName="Select" 
                         ToolTip="Seleccionar" 
                         style="display:none;">
-                    </asp:ImageButton>                    
+                    </asp:ImageButton>                     
                 </asp:Panel>
             </fieldset>
         </div>
