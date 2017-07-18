@@ -49,7 +49,7 @@
                                             <th>Departamento</th>
                                             <th>Puesto</th>
                                             <th>Turno</th>
-                                            <th>Jefe Inmedito</th>
+                                            <th>Jefe Inmediato</th>
                                             <th>Detalle</th>
                                         </tr>
                                     </thead>

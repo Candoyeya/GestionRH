@@ -30,7 +30,7 @@
 
                                                 <div class="col-md-5">
                                                     <div class="row">
-                                                        <label class="alinear-vertical margen">Calle:</label>
+                                                        <label class="alinear-vertical margen">Domicilio:</label>
                                                         <input id="ICalle" runat="server" type="text" readonly="readonly" class="form-control boxed margen" />
                                                     </div>
                                                     <div class="row">
@@ -120,39 +120,6 @@
                                                          <label class="alinear-vertical margen">Fecha Baja:</label>
                                                          <input id="IFechaBaja" runat="server" type="text" readonly="readonly" class="form-control boxed margen" />
                                                      </div>
-                                                 </div>
-                                                 <div class="row">
-                                                        <div class="col-md-12">
-                                                <div class="card">
-                                                    <div class="card-block">
-                                                         <div class="col-md-12">
-                                                              <div class="card-title-block">
-                                                                <h3 class="title"> Movimientos </h3>
-                                                              </div>
-                                                                <section class="example">
-                                                                    <div class="table-flip-scroll">
-                                                                        <table class="table table-striped table-bordered table-hover flip-content">
-                                                                            <thead class="flip-header">
-                                                                             <tr>
-                                                                                <th>Fecha de Solicitud</th>
-                                                                                <th>Monto</th>
-                                                                                 <th>Estatus</th>
-                                                                             </tr>
-                                                                            </thead>
-                                                                            <tbody>
-                                                                             <tr class="gradeA">
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                              </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </div>
-                                                                </section>
-                                                               </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
                                                  </div>
                                             </fieldset>
                                         </div>

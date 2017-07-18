@@ -1,90 +1,78 @@
 ﻿<%@ Page Title="" Language="VB" MasterPageFile="~/dist/Principal.master" AutoEventWireup="false" CodeFile="asistencia.aspx.vb" Inherits="dist_asistencia" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-
-<article class="content dashboard-page">
-                   
-    <section class="section">
+   <article class="content dashboard-page">
+        <form runat="server">      
+           <asp:ScriptManager id="ScriptManager1" runat="server"></asp:ScriptManager>   
+           <asp:UpdatePanel id="UpdatePanel1" UpdateMode="Conditional" runat="server"> 
+           <ContentTemplate>              
+            <section class="section">
                          
-        <div class="col-md-4">
-            <fieldset>
-            <legend>Nombre</legend>
-                <input name='nombre' type='text' tabindex='1' placeholder="Nombre" class="form-control underlined">
-            </fieldset>
-        </div>
-        <div class="col-md-4">
-            <fieldset>
-            <legend>Departamento</legend>
-                <select class="form-control">
-                        <option>--Selecciona un Departamento--</option>
-                        <option>Almace1</option>
-                        <option>Almacen2</option>
-                        <option>Embarques</option>
-                        <option>Compras</option>
-                        <option>Sistemas</option>
-                </select>
-            </fieldset>
-        </div>
-        <div class="col-md-4">
-            <fieldset>
-            <legend> Con Falta</legend>
-                <select class="form-control">
-                        <option>--Selecciona una Opcion--</option>
-                        <option>Si</option>
-                        <option>No</option>
-                        <option>No Asignada</option>
-                </select>
-            </fieldset>
+                <div class="col-md-4">
+                    <fieldset>
+                    <legend>Nombre</legend>
+                        <input name='nombre' type='text' tabindex='1' placeholder="Nombre" class="form-control underlined">
+                    </fieldset>
+                </div>
+                <div class="col-md-4">
+                    <fieldset>
+                    <legend>Departamento</legend>
+                        <select class="form-control">
+                                <option>--Selecciona un Departamento--</option>
+                                <option>Almace1</option>
+                                <option>Almacen2</option>
+                                <option>Embarques</option>
+                                <option>Compras</option>
+                                <option>Sistemas</option>
+                        </select>
+                    </fieldset>
+                </div>
+                <div class="col-md-4">
+                    <fieldset>
+                    <legend> Con Falta</legend>
+                        <select class="form-control">
+                                <option>--Selecciona una Opcion--</option>
+                                <option>Si</option>
+                                <option>No</option>
+                                <option>No Asignada</option>
+                        </select>
+                    </fieldset>
                                 
-        </div>
+                </div>
                         
-    </section>
-
-
-
-
-<section class="section">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="card">
-                <div class="card-block">
-                    <div class="card-title-block">
-                        <h3 class="title"> Empleados </h3>
-                    </div>
-                    <section class="example">
-                        <div class="table-flip-scroll">
-                            <table class="table table-striped table-bordered table-hover flip-content">
-                                <thead class="flip-header">
-                                    <tr>
-                                        <th>Nombre</th>
-                                        <th>Departamento</th>
-                                        <th>Puesto</th>
-                                        <th>Turno</th>
-                                        <th>Jefe Directo</th>
-                                        <th>Asistencia</th>
-                                        <th>Detalle</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="gradeA">
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td class="detalle"><a href="#"><i class="fa fa-eye "></i></a></td>
-                                    </tr>
-                                </tbody>
-                            </table>
+            </section>
+        <section class="section" runat="server">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-block">
+                            <div class="card-title-block">
+                                <h3 class="title"> Empleados </h3>
+                            </div>
+                            <section class="example">
+                                <div class="table-flip-scroll">
+                                  <asp:GridView id="GvAsistencias" runat="server" GridLines="None" CssClass="table table-striped table-bordered table-hover flip-content" 
+                                                    ShowHeaderWhenEmpty="true" AutoGenerateColumns="False" AutoPostBack="true" CausesValidation="false">
+                                        <Columns>
+                                            <asp:BoundField HeaderText="Nombre" DataField="Nombre" ItemStyle-CssClass="active"/>
+                                            <asp:BoundField HeaderText="Departamento" DataField="Departamento" ItemStyle-CssClass="active"/>
+                                            <asp:BoundField HeaderText="Puesto" DataField="Puesto" ItemStyle-CssClass="active"/>
+                                            <asp:BoundField HeaderText="Turno" DataField="Turno" ItemStyle-CssClass="active"/>
+                                            <asp:HyperLinkField HeaderText="Detalles" 
+                                                            DataNavigateUrlFields="codigoempleado" 
+                                                            DataNavigateUrlFormatString="../../dist/InfoEmpleados.aspx?codigoempleado={0}" 
+                                                            Text="<i class='fa fa-eye fa-2x'></i>" />
+                                        </Columns>
+                                    </asp:GridView> 
+                                </div>
+                            </section>
                         </div>
-                    </section>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-                    
-</article>
+        </section>
+        </ContentTemplate>
+        </asp:UpdatePanel>
+        </form>    
+    </article>
 </asp:Content>
-

@@ -34,8 +34,8 @@
                 <div class="auth-container">
                     <div class="card">
                         <header class="auth-header">
-                            <h1 class="auth-title brand">
-                                <div class="logo">  <img src="img/logo.png" class="logo-2" width="40px;" height="40px;"> </div> Recursos Humanos </h1>
+                            
+                                <div>  <img src="img/logo.png" class="logo-2" width="40px;" height="40px;"> </div> <h1 class="auth-title brand">Recursos Humanos </h1>
                         </header>
                         <div class="auth-content">
                             <p class="text-xs-center">Inicio de sesion</p>

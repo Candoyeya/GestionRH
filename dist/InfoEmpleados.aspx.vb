@@ -8,14 +8,22 @@ Partial Class dist_InfoEmpleados
         '--Cargar Informacion del empleado
         Try
             '--Sentencia Consulta nombre
-            Dim sql_Datos As String = "Select T0.nombrelargo,T0.direccion,T0.codigopostal,T0.poblacion,T0.telefono,Curp=T0.curpi+T0.curpf, " &
+            Dim sql_Datos As String = "Select T0.nombrelargo,T0.direccion,T0.codigopostal,T0.poblacion,T0.telefono," &
+                                            "Curp=T0.curpi+substring(convert(VARCHAR,T0.fechanacimiento,112),3,6)+T0.curpf, " &
                                             "Estado=(Case T0.estadocivil " &
                                                 "When 'C' Then 'Casado' " &
                                                 "When 'D' Then 'Divorciado' " &
                                                 "When 'S' Then 'Soltero' " &
                                                 "When 'U' Then 'Union Libre' " &
-                                                "When 'V' Then 'Viudo' End), " &
-                                            "Puesto=T1.descripcion,Departamento=T2.descripcion,Turno=T3.descripcion,T0.numerosegurosocial " &
+                                                "When 'V' Then 'Viudo'" &
+                                                "When '' Then 'No Capturado'End), " &
+                                            "Puesto=T1.descripcion,Departamento=T2.descripcion,Turno=T3.descripcion," &
+                                            "T0.numerosegurosocial,RFC=T0.curpi+substring(convert(VARCHAR,T0.fechanacimiento,112),3,6)+t0.homoclave," &
+                                            "T0.numerofonacot,t2.descripcion,t0.fechaalta," &
+                                              "FechaBaja=(case when substring(convert(VARCHAR,t0.fechabaja,112),1,4)<'1900'" &
+                                                "then 'N/A'" &
+                                                "else substring(convert(VARCHAR,t0.fechabaja,101),1,10) end)," &
+                                            "puesto=t1.descripcion,t0.codigoempleado " &
                                       "From nom10001 T0 " &
                                             "Inner Join nom10006 T1 On (T1.idpuesto=T0.idpuesto) " &
                                             "Inner Join nom10003 T2 On (T2.iddepartamento=T0.iddepartamento) " &
@@ -30,16 +38,21 @@ Partial Class dist_InfoEmpleados
                 While dr.Read
                     'dr.Item("")
                     SpEmpleado.InnerText = dr.Item("nombrelargo")
-                    ICalle.Value = dr.Item("Calle")
+                    ICalle.Value = dr.Item("direccion")
                     ICP.Value = dr.Item("codigopostal")
                     Iciudad.Value = dr.Item("poblacion")
                     ICurp.Value = dr.Item("Curp")
                     IEstadoCivil.Value = dr.Item("Estado")
-                    IFonacot.Value = dr.Item("Fonacot")
-                    IInfonavit.Value = dr.Item("Infonavit")
                     INSS.Value = dr.Item("numerosegurosocial")
-                    IRFC.Value = dr.Item("Rfc")
-                    INumero.Value = dr.Item("Numero")
+                    IRFC.Value = dr.Item("RFC")
+                    IFonacot.Value = dr.Item("numerofonacot")
+                    IDepartamento.Value = dr.Item("descripcion")
+                    IFechaIngreso.Value = dr.Item("fechaalta")
+                    IFechaBaja.Value = dr.Item("FechaBaja")
+                    IPuesto.Value = dr.Item("puesto")
+                    INomina.Value = dr.Item("codigoempleado")
+                    ' IInfonavit.Value = dr.Item("Infonavit")
+                    INumero.Value = dr.Item("telefono")
                 End While
             End If
 

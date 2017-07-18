@@ -454,7 +454,7 @@
                                                         </section>
                                                     </div>
 
-                                                    <a href="AddPros.aspx" class="btn btn-primary-outline center addpro"> Guardar  </a>
+                                                    <a href="AddPros.aspx" class="btn btn-success-outline center addpro"> Guardar  </a>
                                                     <a href="AddPros.aspx" class="btn btn-primary-outline center addpro"> Cancelar  </a>
                                             </div>
                         </div>

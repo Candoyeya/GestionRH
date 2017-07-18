@@ -21,6 +21,7 @@
         <script src='js/jquery.min.js'></script>
         <script src='js/fullcalendar.min.js'></script>
         <!-- Theme initialization -->
+
         <script>
             var themeSettings = (localStorage.getItem('themeSettings')) ? JSON.parse(localStorage.getItem('themeSettings')) :
             {};
@@ -33,46 +34,16 @@
             {
                 document.write('<link rel="stylesheet" id="theme-style" href="css/app.css">');
             }
-
-	$(document).ready(function() {
-		
-		$('#calendar').fullCalendar({
-			header: {
-				left: 'prev,next today',
-				center: 'title',
-				right: 'month,agendaWeek,agendaDay'
-			},
-			defaultDate: '2017-04-12',
-			navLinks: true, // can click day/week names to navigate views
-			selectable: true,
-			selectHelper: true,
-			select: function(start, end) {
-				var title = prompt('Event Title:');
-				var eventData;
-				if (title) {
-					eventData = {
-						title: title,
-						start: start,
-						end: end
-					};
-					$('#calendar').fullCalendar('renderEvent', eventData, true); // stick? = true
-				}
-				$('#calendar').fullCalendar('unselect');
-			},
-			editable: true,
-			eventLimit: true, // allow "more" link when too many events
-			events: [
-				
-			]
-		});
-		
-	});
-
 </script>
+        <style>
+            .prueba{
+                position:fixed;
+            }
+        </style>
     </head>
 
     <body>
-        <div class="main-wrapper"/>
+        <div class="main-wrapper" />
             <div class="app" id="app"/>
                 <header class="header">
                     <div class="header-block header-block-collapse hidden-lg-up"> 
@@ -107,31 +78,34 @@
                     </div>
                 </header>
 <!----------------------------------------------------Menu------------------------------------------------------------------------>
-                <aside class="sidebar">
+                <aside class="sidebar ">
                     <div class="sidebar-container">
                         <div class="sidebar-header">
                             <div class="brand">
                                 <div class="logo"> <img src="img/logo.png" class="logo-2"></div> Gestion RH </div>
                         </div>
-                        <nav class="menu">
+                        <nav class="menu ">
                             <ul class="nav metismenu" id="sidebar-menu">
-                                <li>
+                                <li class="active">
                                     <a href="index.aspx"> <i class="fa fa-users"></i> Empleados </a>
                                 </li>
-                                <li>
+                                <li class="li">
                                     <a href="bolsa.aspx"> <i class="fa fa-hdd-o"></i> Bolsa de Trabajo </a>
                                 </li>
-                                <li>
+                                <li class="li">
                                     <a href="plantilla.aspx"> <i class="fa fa-archive"></i> Plantilla </a>
                                 </li>
-                                <li>
+                                <li class="li"> 
                                     <a href="asistencia.aspx"> <i class="fa fa-table"></i> Asistencias </a>
                                 </li>
-                                <li>
+                                <li class="li">
                                     <a href="incidencias.aspx"> <i class="fa fa-pencil-square-o"></i> Incidencias </a>
                                 </li>
-                                <li>
-                                    <a href="calendario.aspx"> <i class="fa fa-globe"></i> Calendario </a>
+                                <li class="li">
+                                    <a href="facturas.aspx"> <i class="fa fa-money"></i> Facturas </a>
+                                </li>
+                                <li class="li">
+                                    <a href="calendario.aspx"> <i class="fa fa-calendar"></i> Calendario </a>
                                 </li>
                             </ul>
                         </nav>

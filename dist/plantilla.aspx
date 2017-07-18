@@ -21,7 +21,7 @@
                             </select>
                     </div>
                     <div class="col-md-2">
-                        <a href="" class="btn btn-primary-outline center"> <i class="fa fa-search"></i> Buscar  </a>
+                        <a href="#" class="btn btn-primary-outline center"> <i class="fa fa-search"></i> Buscar  </a>
                     </div>
                 </fieldset>
             </div>
@@ -35,7 +35,7 @@
                 <div class="card">
                     <div class="card-block">
 <!----------------------------------------------------Alamcen1-------------------------------------------------------------------->
-                        <fieldset>
+                        <fieldset id="Almacen1">
                             <legend>Almacen1</legend>
                             <section class="example">
                                 <div class="table-flip-scroll">

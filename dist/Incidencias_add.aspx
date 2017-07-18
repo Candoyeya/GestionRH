@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/dist/Principal.master" AutoEventWireup="false" CodeFile="asistencia.aspx.vb" Inherits="dist_asistencia" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/dist/Principal.master" AutoEventWireup="false" CodeFile="Incidencias_add.aspx.vb" Inherits="dist_Incidencias_add" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
@@ -151,6 +151,13 @@
                                     <div class="card-block">
                                          <div class="col-md-12">
                                                 <div class="col-md-12"> 
+                                                     <div class="col-md-3">
+                                                         <label class="alinear-vertical margen">Incidencia:</label>
+                                                         <select class="form-control">
+                                                            <option>Prestamo</option>
+                                                            <option>Facturas</option>
+                                                         </select>
+                                                    </div>
                                                     <div class="col-md-2">
                                                          <label class="alinear-vertical margen">Monto:</label>
                                                          <input type="text" class="form-control boxed margen" />
@@ -226,15 +233,6 @@
                                 </div>
                             </div>
                         </div>
-
-
-
-
-
-
-
-
-
                     </section>
                 </article>
 </asp:Content>
