@@ -12,6 +12,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
+        <link rel="icon"  href="/img/favicon.ico" />
+        <!-- Estilos -->
         <link rel="stylesheet" href="css/vendor.css">
         <link rel="stylesheet" href="css/estilo.css">
         <!-----Calendar-------->
@@ -92,7 +94,7 @@
                                 <li class="li">
                                     <a href="bolsa.aspx"> <i class="fa fa-hdd-o"></i> Bolsa de Trabajo </a>
                                 </li>
-                                <li class="li">
+                                <li class="li" >
                                     <a href="plantilla.aspx"> <i class="fa fa-archive"></i> Plantilla </a>
                                 </li>
                                 <li class="li"> 

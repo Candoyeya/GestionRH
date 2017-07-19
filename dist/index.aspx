@@ -42,6 +42,7 @@
                                     <asp:GridView id="GvEmpleados" runat="server" GridLines="None" CssClass="table table-striped table-bordered table-hover flip-content" 
                                                     ShowHeaderWhenEmpty="true" AutoGenerateColumns="False" AutoPostBack="true" CausesValidation="false">
                                         <Columns>
+                                            <asp:BoundField HeaderText="Numero" DataField="codigoempleado" ItemStyle-CssClass="active"/>
                                             <asp:BoundField HeaderText="Nombre" DataField="Nombre" ItemStyle-CssClass="active"/>
                                             <asp:BoundField HeaderText="Departamento" DataField="Departamento" ItemStyle-CssClass="active"/>
                                             <asp:BoundField HeaderText="Puesto" DataField="Puesto" ItemStyle-CssClass="active"/>

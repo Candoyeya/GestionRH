@@ -11,7 +11,9 @@ Partial Class dist_index
         Try
             '---Definir tabla temporal para llenar gv
             Dim DataTable As New DataTable()
-            DataTable.Columns.AddRange(New DataColumn() {New DataColumn("Nombre", GetType(String)),
+            DataTable.Columns.AddRange(New DataColumn() {
+                                                       New DataColumn("Numero", GetType(String)),
+                                                       New DataColumn("Nombre", GetType(String)),
                                                        New DataColumn("Departamento", GetType(String)),
                                                        New DataColumn("Puesto", GetType(String)),
                                                        New DataColumn("Turno", GetType(String)),
@@ -23,7 +25,8 @@ Partial Class dist_index
             '--------->Recorrer todos los registros de la consulta
             If dr.HasRows Then
                 While dr.Read
-                    DataTable.Rows.Add(dr.Item("Nombre"),
+                    DataTable.Rows.Add(dr.Item("codigoempleado"),
+                                       dr.Item("Nombre"),
                                        dr.Item("Departamento"),
                                        dr.Item("Puesto"),
                                        dr.Item("Turno"),
