@@ -30,19 +30,19 @@
                                                 <div class="col-md-5 "> 
                                                     <div class="row">
                                                          <label class="alinear-vertical margen">Nombre:</label>
-                                                         <input type="text" class="form-control boxed margen" />
+                                                         <input type="text" class="form-control boxed margen" id="INombre" runat="server"/>
                                                      </div>
                                                      <div class="row">
                                                          <label class="alinear-vertical margen">Domicilio:</label>
-                                                         <input type="text" class="form-control boxed margen" />
+                                                         <input type="text" class="form-control boxed margen" id="IDomicilio" runat="server"/>
                                                      </div>
                                                      <div class="row">
                                                          <label class="alinear-vertical margen">Ciudad:</label>
-                                                         <input type="text" class="form-control boxed margen" />
+                                                         <input type="text" class="form-control boxed margen" Id="ICiudad" runat="server"/>
                                                      </div>
                                                      <div class="row">
                                                          <label class="alinear-vertical margen">Curp:</label>
-                                                         <input type="text" class="form-control boxed margen" />
+                                                         <input type="text" class="form-control boxed margen" Id="ICurp" runat="server"/>
                                                      </div>
                                                 </div> 
                                                 <div class="col-md-2 ">
@@ -50,48 +50,20 @@
                                                 <div class="col-md-5">
                                                     <div class="row">
                                                          <label class="alinear-vertical margen">CP:</label>
-                                                         <input type="text" class="form-control boxed margen" />
+                                                         <input type="text" class="form-control boxed margen" Id="ICp" runat="server"/>
                                                      </div>
                                                      <div class="row">
                                                          <label class="alinear-vertical margen">Telefono:</label>
-                                                         <input type="text" class="form-control boxed margen" />
+                                                         <input type="text" class="form-control boxed margen" Id="ITelefono" runat="server"/>
                                                      </div>
                                                      <div class="row">
-                                                         <label class="alinear-vertical margen">NNS:</label>
-                                                         <input type="text" class="form-control boxed margen" />
+                                                         <label class="alinear-vertical margen">NSS:</label>
+                                                         <input type="text" class="form-control boxed margen" Id="INSS" runat="server"/>
                                                      </div>
                                                 </div> 
                                             </fieldset>
                                             <fieldset>
                                             <legend>Antecedentes</legend>
-                                                <div class="col-md-12"> 
-                                                    <div class="col-md-3">
-                                                         <label class="alinear-vertical margen">Nombre:</label>
-                                                         <input type="text"  class="form-control boxed margen" />
-                                                    </div>
-                                                    <div class="col-md-2">
-                                                         <label class="alinear-vertical margen">Puesto:</label>
-                                                         <select class="form-control">
-                                                            <option>Selecione</option>
-                                                            <option>Sistemas</option>
-                                                         </select>
-                                                    </div>
-                                                    <div class="col-md-1">
-                                                         <label class="alinear-vertical margen">Año:</label>
-                                                         <input type="text" class="form-control boxed margen" />
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                         <label class="alinear-vertical margen">Referencia:</label>
-                                                         <input type="text" class="form-control boxed margen" />
-                                                    </div>
-                                                    <div class="col-md-2">
-                                                         <label class="alinear-vertical margen">Telefono:</label>
-                                                         <input type="text" class="form-control boxed margen" />
-                                                    </div>
-                                                    <div class="col-md-1">
-                                                         <a href="#"><i class="fa fa-plus-square fa-3x"></i></a>
-                                                    </div>
-                                                </div> 
                                                 <div class="col-md-12 ">
                                                     <section class="example">
                                                         <div class="table-flip-scroll">
@@ -121,32 +93,6 @@
                                             </fieldset>
                                              <fieldset>
                                             <legend>Evaluacion</legend>
-                                                <div class="col-md-12"> 
-                                                    <div class="col-md-3">
-                                                         <label class="alinear-vertical margen">Nombre:</label>
-                                                         <input type="text"  class="form-control boxed margen" />
-                                                    </div>
-                                                    <div class="col-md-2">
-                                                         <label class="alinear-vertical margen">Calificacion:</label>
-                                                          <input type="text" class="form-control boxed margen" />
-                                                    </div>
-                                                    <div class="col-md-2">
-                                                         <label class="alinear-vertical margen">Apto:</label>
-                                                         <select class="form-control">
-                                                             <option>Si</option>
-                                                             <option>No</option>
-                                                          </select>
-                                                        
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                         <label class="alinear-vertical margen">Comentarios:</label>
-                                                         <input type="text" class="form-control boxed margen" />
-                                                    </div>
-                                                    <div class="col-md-1">
-                                                         <a href="#"><i class="fa fa-plus-square fa-3x"></i></a>
-                                                    </div>
-
-                                                </div> 
                                                 <div class="col-md-12 ">
                                                     <section class="example">
                                                         <div class="table-flip-scroll">

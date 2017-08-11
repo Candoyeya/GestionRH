@@ -38,27 +38,27 @@
                                                     <div class="col-md-5 "> 
                                                         <div class="row">
                                                              <label class="alinear-vertical margen">Nombre:</label>
-                                                             <input type="text" class="form-control boxed margen" />
+                                                             <input type="text" class="form-control boxed margen" id="INombre" runat="server"/>
                                                          </div>
                                                          <div class="row">
                                                              <label class="alinear-vertical margen">Domicilio:</label>
-                                                             <input type="text" class="form-control boxed margen" />
+                                                             <input type="text" class="form-control boxed margen" id="IDomicilio" runat="server"/>
                                                          </div>
                                                          <div class="row">
                                                              <label class="alinear-vertical margen">Ciudad:</label>
-                                                             <input type="text" class="form-control boxed margen" />
+                                                             <input type="text" class="form-control boxed margen" id="ICiudad" runat="server"/>
                                                          </div>
                                                          <div class="row">
                                                              <label class="alinear-vertical margen">CP:</label>
-                                                             <input type="number" class="form-control boxed margen" />
+                                                             <asp:TextBox type="number" CssClass="form-control boxed margen" id="ICP" runat="server"> </asp:TextBox>
                                                          </div>
                                                         <div class="row">
                                                              <label class="alinear-vertical margen">Fecha de nacimiento:</label>
-                                                             <input type="date" class="form-control boxed margen" />
+                                                             <asp:TextBox type="date" CssClass="form-control boxed margen" id="IFecha_Naci" runat="server"></asp:TextBox>
                                                          </div>
                                                         <div class="row">
                                                              <label class="alinear-vertical margen">Edad:</label>
-                                                             <input type="number" class="form-control boxed margen" />
+                                                             <asp:TextBox type="number" CssClass="form-control boxed margen" id="IEdad" runat="server"></asp:TextBox>
                                                          </div>
                                                    </div> 
                                                    <div class="col-md-2 ">
@@ -66,32 +66,32 @@
                                                    <div class="col-md-5">
                                                          <div class="row">
                                                              <label class="alinear-vertical margen">Telefono:</label>
-                                                             <input type="number" class="form-control boxed margen" />
+                                                             <asp:TextBox type="number" CssClass="form-control boxed margen" id="ITelefono" runat="server"></asp:TextBox>
                                                          </div>
                                                          <div class="row">
                                                              <label class="alinear-vertical margen">Celular:</label>
-                                                             <input type="number" class="form-control boxed margen" />
+                                                             <asp:TextBox type="number" CssClass="form-control boxed margen" id="ICelular" runat="server"></asp:TextBox>
                                                          </div>
                                                          <div class="row">
                                                              <label class="alinear-vertical margen">Lugar de Nacimiento:</label>
-                                                             <input type="text" class="form-control boxed margen" />
+                                                             <input type="text" class="form-control boxed margen" id="ILugar_Naci" runat="server"/>
                                                          </div>
                                                         <div class="row">
                                                              <label class="alinear-vertical margen">Sexo:</label>
-                                                             <select class="form-control">
-                                                                <option>Femenino</option>
-                                                                <option>Masculino</option>
-                                                                <option>Indistinto</option>
+                                                             <select class="form-control" id="SSexo" runat="server">
+                                                                <option value="F">Femenino</option>
+                                                                <option value="M">Masculino</option>
+                                                                <option value="I">Indistinto</option>
                                                              </select>
                                                          </div>
                                                         <div class="row">
                                                              <label class="alinear-vertical margen">Estado Civil:</label>
-                                                             <select class="form-control">
-                                                                <option>Soltero(a)</option>
-                                                                <option>Casado(a)</option>
-                                                                <option>Union Libre</option>
-                                                                <option>Divorciado(a)</option>
-                                                                <option>Viudo(a)</option>
+                                                             <select class="form-control" id="SEstado" runat="server">
+                                                                <option value="S">Soltero(a)</option>
+                                                                <option value="C">Casado(a)</option>
+                                                                <option value="L">Union Libre</option>
+                                                                <option value="D">Divorciado(a)</option>
+                                                                <option value="V">Viudo(a)</option>
                                                              </select>
                                                          </div>
                                                     </div> 
@@ -101,22 +101,22 @@
                                                      <div class="col-md-5 "> 
                                                         <div class="row">
                                                              <label class="alinear-vertical margen">Curp:</label>
-                                                             <input type="text" class="form-control boxed margen" />
+                                                             <input type="text" class="form-control boxed margen" id="Icurp" runat="server"/>
                                                          </div>
                                                          <div class="row">
                                                              <label class="alinear-vertical margen">NSS:</label>
-                                                             <input type="number" class="form-control boxed margen" />
+                                                             <asp:TextBox type="number" CssClass="form-control boxed margen" id="INSS" runat="server"></asp:TextBox>
                                                          </div>
                                                          <div class="row">
                                                              <label class="alinear-vertical margen">Licencia de Manejo:</label>
-                                                             <select class="form-control">
-                                                                <option>SI</option>
-                                                                <option>NO</option>
+                                                             <select class="form-control" id="SLicencia" runat="server">
+                                                                <option value="1">SI</option>
+                                                                <option value="0">NO</option>
                                                              </select>
                                                          </div>
                                                         <div class="row">
                                                              <label class="alinear-vertical margen">Numero de Licencia:</label>
-                                                             <input type="number" class="form-control boxed margen" />
+                                                             <asp:TextBox type="number" class="form-control boxed margen" id="INume_Lice" runat="server"></asp:TextBox>
                                                          </div>
                                                     
                                                     </div> 
@@ -125,18 +125,18 @@
                                                     <div class="col-md-5">
                                                          <div class="row">
                                                              <label class="alinear-vertical margen">RFC:</label>
-                                                             <input type="text" class="form-control boxed margen" />
+                                                             <input type="text" class="form-control boxed margen" id="IRFC" runat="server"/>
                                                          </div>
                                                         <div class="row">
                                                              <label class="alinear-vertical margen">Infonavit:</label>
-                                                             <input type="text" class="form-control boxed margen" />
+                                                             <input type="text" class="form-control boxed margen" id="IInfonavit" runat="server"/>
                                                          </div>
                                                         <div class="row">
                                                              <label class="alinear-vertical margen">Clase de Licencia:</label>
-                                                             <select class="form-control">
-                                                                <option>Clase 1</option>
-                                                                <option>Clase 2</option>
-                                                                <option>Clase 3</option>
+                                                             <select class="form-control" id="SClase_Lic" runat="server">
+                                                                <option value="1">Clase 1</option>
+                                                                <option value="2">Clase 2</option>
+                                                                <option value="3">Clase 3</option>
                                                              </select>
                                                          </div>
                                                      
@@ -171,8 +171,8 @@
                                                             <div class="col-md-2">
                                                                  <label class="alinear-vertical margen">Vive:</label>
                                                                  <select Id="SVive" runat="server" class="form-control">
-                                                                    <option value="Si">Si</option>
-                                                                    <option value="No">No</option>
+                                                                    <option value="1">Si</option>
+                                                                    <option value="0">No</option>
                                                                  </select>
                                                             </div>
                                                             <div class="col-md-4">
@@ -191,10 +191,10 @@
                                                         <div class="col-md-12 ">
                                                         <section class="example">
                                                             <div class="table-flip-scroll">
-                                                                <asp:GridView id="GvDF" runat="server" GridLines="None" CssClass="table table-striped table-bordered table-hover flip-content" 
+                                                                <asp:GridView id="GvDF" runat="server" GridLines="None" CssClass="table table-sm thead-inverse table-bordered table-hover flip-content" 
                                                                             ShowHeaderWhenEmpty="true" AutoGenerateColumns="False" AutoPostBack="true" CausesValidation="false">
                                                                 <Columns>
-                                                                    <asp:BoundField HeaderText="Nombre" DataField="Nombre" ItemStyle-CssClass="active"/>
+                                                                    <asp:BoundField HeaderText="Nombre" DataField="Nombre" ItemStyle-CssClass="active" />
                                                                     <asp:BoundField HeaderText="Parentesco" DataField="Parentesco" ItemStyle-CssClass="active"/>
                                                                     <asp:BoundField HeaderText="ViveCon" DataField="ViveCon" ItemStyle-CssClass="active"/>
                                                                     <asp:BoundField HeaderText="Vive" DataField="Vive" ItemStyle-CssClass="active"/>
@@ -243,8 +243,8 @@
                                                         <div class="col-md-3">
                                                              <label class="alinear-vertical margen">Titulo:</label>
                                                              <select Id="STitulo" runat="server" class="form-control">
-                                                                <option value="Si">Si</option>
-                                                                <option value="No">No</option>
+                                                                <option value="1">Si</option>
+                                                                <option value="0">No</option>
                                                              </select>
                                                         </div>
                                                         <div class="col-md-1">
@@ -255,7 +255,7 @@
                                                 <div class="col-md-12 ">
                                                     <section class="example">
                                                         <div class="table-flip-scroll">
-                                                            <asp:GridView id="GvEscolaridad" runat="server" GridLines="None" CssClass="table table-striped table-bordered table-hover flip-content" 
+                                                            <asp:GridView id="GvEscolaridad" runat="server" GridLines="None" CssClass="table table-sm thead-inverse table-bordered table-hover flip-content" 
                                                                             ShowHeaderWhenEmpty="true" AutoGenerateColumns="False" AutoPostBack="true" CausesValidation="false">
                                                                 <Columns>
                                                                     <asp:BoundField HeaderText="Nombre" DataField="Nombre" ItemStyle-CssClass="active"/>
@@ -321,7 +321,7 @@
                                                     <div class="col-md-12 ">
                                                         <section class="example">
                                                             <div class="table-flip-scroll">
-                                                                <asp:GridView id="GVEmpleos" runat="server" GridLines="None" CssClass="table table-striped table-bordered table-hover flip-content" 
+                                                                <asp:GridView id="GVEmpleos" runat="server" GridLines="None" CssClass="table table-sm thead-inverse table-bordered table-hover flip-content" 
                                                                                 ShowHeaderWhenEmpty="true" AutoGenerateColumns="False" AutoPostBack="true" CausesValidation="false">
                                                                     <Columns>
                                                                         <asp:BoundField HeaderText="Nombre" DataField="Nombre" ItemStyle-CssClass="active"/>
@@ -335,7 +335,7 @@
                                                                     </Columns>
                                                                 </asp:GridView>  
                                                              
-                                                                <asp:GridView id="GvMotivoE" runat="server" GridLines="None" CssClass="table table-striped table-bordered table-hover flip-content" 
+                                                                <asp:GridView id="GvMotivoE" runat="server" GridLines="None" CssClass="table table-sm thead-inverse table-bordered table-hover flip-content" 
                                                                                 ShowHeaderWhenEmpty="true" AutoGenerateColumns="False" AutoPostBack="true" CausesValidation="false">
                                                                     <Columns>
                                                                         <asp:BoundField HeaderText="Motivo de separacion" DataField="Mot_Separacion" ItemStyle-CssClass="active"/>
@@ -349,113 +349,109 @@
                                                 </div>
 <!--------------------------------------------------------------------------Referencia------------------------------------------------------------------------------>
                                                 <div class="tab-pane fade" id="referencia" aria-expanded="false">
+                                                    <asp:UpdatePanel id="UpdatePanel4" UpdateMode="Conditional" runat="server">
+                                                    <ContentTemplate> 
                                                       <div class="col-md-12"> 
                                                     <div class="col-md-6">
                                                          <label class="alinear-vertical margen">Nombre:</label>
-                                                         <input type="text"  class="form-control boxed margen" />
+                                                         <input type="text"  class="form-control boxed margen" id="INom_Ref" runat="server" />
                                                     </div>
                                                     <div class="col-md-6">
                                                          <label class="alinear-vertical margen">Direccion:</label>
-                                                         <input type="text"  class="form-control boxed margen" />
+                                                         <input type="text"  class="form-control boxed margen" id="IDire_Ref" runat="server"/>
                                                     </div>
                                                     <div class="col-md-4">
                                                          <label class="alinear-vertical margen">Telefono:</label>
-                                                         <input type="text" class="form-control boxed margen" />
+                                                         <input type="text" class="form-control boxed margen" id="ITele_Ref" runat="server"/>
                                                     </div>
                                                     <div class="col-md-4">
                                                          <label class="alinear-vertical margen">Ocupacion:</label>
-                                                         <input type="text" class="form-control boxed margen" />
+                                                         <input type="text" class="form-control boxed margen" id="IOcupa_Ref" runat="server"/>
                                                     </div>
                                                     <div class="col-md-3">
                                                          <label class="alinear-vertical margen">Tiempo de Conocerlo:</label>
-                                                         <input type="text" class="form-control boxed margen" />
+                                                         <input type="text" class="form-control boxed margen" id="ITim_Ref" runat="server"/>
                                                     </div>
                                                     <div class="col-md-1">
-                                                         <a href="#"><i class="fa fa-plus-square fa-3x"></i></a>
+                                                         <asp:LinkButton id="BtnReferencia" runat="server"><i class="fa fa-plus-square fa-3x"></i></asp:LinkButton>
                                                     </div>
                                                 </div> 
                                                 <div class="col-md-12 ">
                                                     <section class="example">
-                                                        <div class="table-flip-scroll">
-                                                            <table class="table table-striped table-bordered table-hover flip-content">
-                                                                <thead class="flip-header">
-                                                                    <tr>
-                                                                        <th>Nombre</th>
-                                                                        <th>Direccion</th>
-                                                                        <th>Telefono</th>
-                                                                        <th>Ocupacion</th>
-                                                                        <th>Tiempo de Conocerlo</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr class="gradeA">
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </section>
+                                                            <div class="table-flip-scroll">
+                                                                <asp:GridView id="GVReferencia" runat="server" GridLines="None" CssClass="table table-sm thead-inverse table-bordered table-hover flip-content" 
+                                                                                ShowHeaderWhenEmpty="true" AutoGenerateColumns="False" AutoPostBack="true" CausesValidation="false">
+                                                                    <Columns>
+                                                                        <asp:BoundField HeaderText="Nombre" DataField="Nombre" ItemStyle-CssClass="active"/>
+                                                                        <asp:BoundField HeaderText="Direccion" DataField="Direccion" ItemStyle-CssClass="active"/>
+                                                                        <asp:BoundField HeaderText="Telefono" DataField="Telefono" ItemStyle-CssClass="active"/>
+                                                                        <asp:BoundField HeaderText="Ocupacion" DataField="Ocupacion" ItemStyle-CssClass="active"/>
+                                                                        <asp:BoundField HeaderText="Tiempo" DataField="Tiempo" ItemStyle-CssClass="active"/>
+                                                                    </Columns>
+                                                                </asp:GridView>  
+                                                            </div>
+                                                        </section>
                                                 </div>
+                                                        </ContentTemplate>
+                                                    </asp:UpdatePanel>
                                                 </div>
 <!--------------------------------------------------------------------------Evaluacion ------------------------------------------------------------------------------>
                                                 <div class="tab-pane fade" id="evaluacion" aria-expanded="false">
+                                                    <asp:UpdatePanel id="UpdatePanel5" UpdateMode="Conditional" runat="server">
+                                                    <ContentTemplate> 
                                                     <div class="col-md-12"> 
-                                                        <div class="col-md-3">
+                                                        <div class="col-md-6">
                                                              <label class="alinear-vertical margen">Nombre:</label>
-                                                             <input type="text"  class="form-control boxed margen" />
+                                                             <input type="text" id="INom_Evalua" runat="server" class="form-control boxed margen" />
                                                         </div>
-                                                        <div class="col-md-2">
+                                                        <div class="col-md-3">
                                                              <label class="alinear-vertical margen">Calificacion:</label>
-                                                              <input type="text" class="form-control boxed margen" />
+                                                              <input type="text" id="ICalificacion" runat="server" class="form-control boxed margen" />
                                                         </div>
-                                                        <div class="col-md-2">
+                                                        <div class="col-md-3">
                                                              <label class="alinear-vertical margen">Apto:</label>
-                                                             <select class="form-control">
-                                                                 <option>Si</option>
-                                                                 <option>No</option>
+                                                             <select Id="SApto" runat="server" class="form-control">
+                                                                 <option value="1">Si</option>
+                                                                 <option value="0">No</option>
                                                               </select>
                                                             
                                                         </div>
-                                                        <div class="col-md-4">
+
+                                                    </div> 
+                                                    <div class="col-md-12"> 
+                                                        <div class="col-md-5">
+                                                             <label class="alinear-vertical margen">Departamento:</label>
+                                                             <asp:DropDownList ID="Departamento" runat="server" CssClass="form-control" AutoPostBack="true" CausesValidation="false" ></asp:DropDownList>
+                                                        </div>
+                                                        <div class="col-md-6">
                                                              <label class="alinear-vertical margen">Comentarios:</label>
-                                                             <input type="text" class="form-control boxed margen" />
+                                                             <input type="text" id="IComenta" runat="server" class="form-control boxed margen" />
                                                         </div>
                                                         <div class="col-md-1">
-                                                             <a href="#"><i class="fa fa-plus-square fa-3x"></i></a>
+                                                           <asp:LinkButton id="BtnEvaluacion" runat="server"><i class="fa fa-plus-square fa-3x"></i></asp:LinkButton>
                                                         </div>
 
                                                     </div> 
                                                     <div class="col-md-12 ">
-                                                        <section class="example">
+                                                         <section class="example">
                                                             <div class="table-flip-scroll">
-                                                                <table class="table table-striped table-bordered table-hover flip-content">
-                                                                    <thead class="flip-header">
-                                                                        <tr>
-                                                                            <th>Nombre de la Evaluacion</th>
-                                                                            <th>Calificacion</th>
-                                                                            <th>Apto</th>
-                                                                            <th>Comentarios</th>
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody>
-                                                                        <tr class="gradeA">
-                                                                            <td></td>
-                                                                            <td></td>
-                                                                            <td></td>
-                                                                            <td></td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
+                                                                <asp:GridView id="GVEvaluacion" runat="server" GridLines="None" CssClass="table table-sm thead-inverse table-bordered table-hover flip-content" 
+                                                                                ShowHeaderWhenEmpty="true" AutoGenerateColumns="False" AutoPostBack="true" CausesValidation="false">
+                                                                    <Columns>
+                                                                        <asp:BoundField HeaderText="Nombre" DataField="Nombre" ItemStyle-CssClass="active"/>
+                                                                        <asp:BoundField HeaderText="Calificacion" DataField="Calificacion" ItemStyle-CssClass="active"/>
+                                                                        <asp:BoundField HeaderText="Apto" DataField="Apto" ItemStyle-CssClass="active"/>
+                                                                        <asp:BoundField HeaderText="Area" DataField="Area" ItemStyle-CssClass="active"/>
+                                                                        <asp:BoundField HeaderText="Comentarios" DataField="Comentarios" ItemStyle-CssClass="active"/>
+                                                                    </Columns>
+                                                                </asp:GridView>  
                                                             </div>
                                                         </section>
                                                     </div>
-
-                                                    <a href="AddPros.aspx" class="btn btn-success-outline center addpro"> Guardar  </a>
-                                                    <a href="AddPros.aspx" class="btn btn-primary-outline center addpro"> Cancelar  </a>
+                                                    </ContentTemplate>
+                                                    </asp:UpdatePanel>
+                                                     <asp:LinkButton id="BtnGuardar" runat="server" class="btn btn-success-outline center addpro">Guardar</asp:LinkButton>
+                                                     <asp:LinkButton id="BtnCalncelar" runat="server" class="btn btn-primary-outline center addpro">Cancelar</asp:LinkButton>
                                             </div>
                         </div>
                     </div>

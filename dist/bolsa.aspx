@@ -3,7 +3,10 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
 <article class="content dashboard-page">
-                   
+ <form runat="server">    
+    <asp:ScriptManager id="ScriptManager1" runat="server"></asp:ScriptManager>   
+    <asp:UpdatePanel id="UpdatePanel1" UpdateMode="Conditional" runat="server">         
+    <ContentTemplate>         
         <section class="section">
                          
             <div class="col-md-4">
@@ -38,32 +41,24 @@
                 <div class="card">
                     <div class="card-block">
                         <div class="card-title-block">
-                            <h3 class="title"> Empleados </h3>
+                            <h3 class="title"> Prospectos </h3>
                         </div>
                         <section class="example">
                             <div class="table-flip-scroll">
-                                <table class="table table-striped table-bordered table-hover flip-content">
-                                    <thead class="flip-header">
-                                        <tr>
-                                            <th>Nombre</th>
-                                            <th>Departamento</th>
-                                            <th>Puesto</th>
-                                            <th>Turno</th>
-                                            <th>Jefe Inmediato</th>
-                                            <th>Detalle</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="gradeA">
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td class="detalle"><a href="#"><i class="fa fa-eye"></i></a></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <asp:GridView id="GvProspectos" runat="server" GridLines="None" CssClass="table table-striped table-bordered table-hover flip-content" 
+                                                    ShowHeaderWhenEmpty="true" AutoGenerateColumns="False" AutoPostBack="true" CausesValidation="false">
+                                        <Columns>
+                                            <asp:BoundField HeaderText="Id" DataField="IdPros" ItemStyle-CssClass="active"/>
+                                            <asp:BoundField HeaderText="Nombre" DataField="Nombre" ItemStyle-CssClass="active"/>
+                                            <asp:BoundField HeaderText="Domicilio" DataField="Domicilio" ItemStyle-CssClass="active"/>
+                                            <asp:BoundField HeaderText="Ciudad" DataField="Ciudad" ItemStyle-CssClass="active"/>
+                                            <asp:BoundField HeaderText="Edad" DataField="Edad" ItemStyle-CssClass="active"/>
+                                            <asp:HyperLinkField HeaderText="Detalles" 
+                                                            DataNavigateUrlFields="IdPros" 
+                                                            DataNavigateUrlFormatString="../../dist/InfoPros.aspx?IdPros={0}" 
+                                                            Text="<i class='fa fa-eye fa-2x'></i>" />
+                                        </Columns>
+                                    </asp:GridView>  
                             </div>
                         </section>
                     </div>
@@ -71,7 +66,9 @@
             </div>
         </div>
     </section>
-                    
+     </ContentTemplate>
+    </asp:UpdatePanel>  
+   </form>                 
 </article>
 </asp:Content>
 
