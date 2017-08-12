@@ -35,8 +35,8 @@
                 <div class="card">
                     <div class="card-block">
 <!----------------------------------------------------Alamcen1-------------------------------------------------------------------->
-                        <asp:fieldset>
-                            <asp:legend>Almacen1</asp:legend>
+                        <fieldset>
+                            <legend>Almacen1</legend>
                             <section class="example">
                                 <div class="table-flip-scroll">
                                     <table class="table table-striped table-bordered table-hover flip-content">
@@ -59,7 +59,7 @@
                                     </table>
                                 </div>
                             </section>
-                            </asp:fieldset>
+                            </fieldset>
 <!----------------------------------------------------Alamcen2-------------------------------------------------------------------->
                             <fieldset>
                             <legend>Almacen2</legend>
